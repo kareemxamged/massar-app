@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.actionBtn {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.dropdownMenuRtl {
+  right: auto;
+  left: 0;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  color: #f8fafc;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+[dir="rtl"] .dropdownItem {
+  flex-direction: row-reverse;
+}
+
+.dropdownItem:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dropdownItem:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.dropdownDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 4px 0;
+}
+
+.dangerText {
+  color: #fb7185;
+}
+
+.dangerText:hover:not(:disabled) {
+  background: rgba(251, 113, 133, 0.1);
+}

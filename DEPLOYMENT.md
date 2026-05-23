@@ -2,30 +2,24 @@
 
 **Stack:** Vite + React SPA · PM2 (`serve`) · Nginx · Let's Encrypt  
 **Server path:** `/var/www/exam-management-system`  
-**App port:** `3000` (internal, never exposed publicly)
+**App port:** `3000` (internal, confirmed free on this VPS)
 
 ---
 
-## Prerequisites (run once on a fresh VPS)
+## Prerequisites (run once if not already installed)
+
+> Nginx is already running on this VPS. Only run what's missing.
 
 ```bash
-# Update system packages
-sudo apt update && sudo apt upgrade -y
-
-# Install Node.js 20 LTS via nvm (recommended)
+# Install Node.js 20 LTS via nvm (if not installed)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.bashrc
 nvm install 20
 nvm use 20
 node -v   # Expected: v20.x.x
 
-# Install PM2 and serve globally
+# Install PM2 and serve globally (if not installed)
 npm install -g pm2 serve
-
-# Install Nginx
-sudo apt install nginx -y
-sudo systemctl enable nginx
-sudo systemctl start nginx
 ```
 
 ---
@@ -39,7 +33,7 @@ sudo chown $USER:$USER /var/www/exam-management-system
 
 **Option A — Clone from Git (recommended):**
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git /var/www/exam-management-system
+git clone https://github.com/kareemxamged/massar-app.git /var/www/exam-management-system
 ```
 
 **Option B — Upload via SCP from your local machine:**
@@ -153,10 +147,7 @@ sudo ln -s /etc/nginx/sites-available/massar.kareemamgad.com \
            /etc/nginx/sites-enabled/massar.kareemamgad.com
 ```
 
-Remove the default site if it conflicts:
-```bash
-sudo rm -f /etc/nginx/sites-enabled/default
-```
+> **Do NOT remove the default site** — other websites are running on this VPS.
 
 ---
 

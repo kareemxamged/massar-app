@@ -51,8 +51,8 @@ agent-workspace/
 mcp-server/
 
 # ── AI-generated planning & documentation ────────────────────────────────────
-features/
-migrations/
+/features/
+/migrations/
 docs/
 ARCHITECTURE_REPORT.md
 CLAUDE.md
