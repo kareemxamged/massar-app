@@ -1,0 +1,733 @@
+/* --- Container & Header --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 0.5rem 0;
+}
+
+.pageSubtitle {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* --- Filters Bar --- */
+.filtersBar {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* --- Search Input --- */
+.searchWrapper {
+    position: relative;
+    flex: 1 1 300px;
+    min-width: 0;
+}
+
+.searchInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px 12px 44px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.searchInput:focus {
+    border-color: var(--primary);
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.searchIcon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    display: flex;
+    pointer-events: none;
+}
+
+/* --- Filter Select (Subject & Sort) --- */
+.filterWrapper {
+    position: relative;
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.filterSelect {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    padding-right: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    appearance: none;
+    transition: all 0.2s;
+}
+
+.filterSelect:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.filterSelect option {
+    background: #1e293b;
+    color: white;
+}
+
+.filterIcon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    display: flex;
+    pointer-events: none;
+}
+
+/* --- Export Button --- */
+.exportBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #8b5cf6, #6366f1);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    flex: 1 1 auto;
+    justify-content: center;
+    box-shadow: 0 4px 14px 0 rgba(139, 92, 246, 0.39);
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.exportBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+.exportBtn:disabled {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* --- General Statistics Card --- */
+.statsCard {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+
+.statsHeader {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.statItem {
+    text-align: center;
+}
+
+.statItemBordered {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 2rem;
+}
+
+.statLabel {
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.statValue {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.statValueGreen {
+    color: #10b981;
+}
+
+.statValueWhite {
+    color: white;
+}
+
+.statValueRed {
+    color: #ef4444;
+}
+
+/* --- Chart Card --- */
+.chartCard {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.chartHeader {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.chartHeaderIcon {
+    color: #8b5cf6;
+}
+
+.chartWrapper {
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.chartContainer {
+    height: 300px;
+}
+
+/* --- Single Result Placeholder --- */
+.singleResultPlaceholder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.placeholderCard {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(15, 23, 42, 0.6);
+    padding: 1.5rem 2.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    text-align: center;
+}
+
+.placeholderTitle {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.placeholderText {
+    margin: 0;
+    font-size: 0.9rem;
+    max-width: 300px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* --- Empty Chart State --- */
+.emptyChart {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* --- Empty State --- */
+.emptyState {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.emptyIconCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+.emptyTitle {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 0 0.5rem 0;
+}
+
+.emptyText {
+    color: var(--text-muted);
+    max-width: 400px;
+    margin: 0;
+}
+
+/* --- Results List --- */
+.resultsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* --- Result Card --- */
+.resultCard {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resultHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.resultTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    overflow-wrap: break-word;
+}
+
+.resultMeta {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.resultScore {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.scoreValue {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.scoreValueGreen {
+    color: #10b981;
+}
+
+.scoreValueYellow {
+    color: #f59e0b;
+}
+
+.scoreValueRed {
+    color: #ef4444;
+}
+
+.statusBadge {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.statusPassed {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.statusFailed {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+/* --- Progress Bar --- */
+.progressBar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-out;
+}
+
+/* --- Action Buttons --- */
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.viewDetailsBtn {
+    background: transparent;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: opacity 0.2s;
+}
+
+.viewDetailsBtn:hover {
+    opacity: 0.8;
+}
+
+.reviewBtn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* --- Bottom Stats Cards Grid --- */
+.bottomStatsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* --- StatCard Component --- */
+.statCard {
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.statCardGlow {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 80px;
+    height: 80px;
+    filter: blur(40px);
+    opacity: 0.15;
+    border-radius: 50%;
+}
+
+.statCardIcon {
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+}
+
+.statCardTitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.statCardValue {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.statCardSubtext {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+/* --- Loading --- */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+}
+
+/* Mobile Responsive: @media (max-width: 639px) */
+@media (max-width: 639px) {
+    .container {
+        padding: 0 0.75rem 1.5rem 0.75rem;
+    }
+
+    .pageTitle {
+        font-size: 1.25rem;
+    }
+
+    .pageSubtitle {
+        font-size: 0.85rem;
+    }
+
+    .filtersBar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem;
+    }
+
+    .searchWrapper {
+        flex: 1 1 100%;
+    }
+
+    .filterWrapper {
+        flex: 1 1 100%;
+    }
+
+    .exportBtn {
+        flex: 1 1 100%;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .statsCard {
+        padding: 1rem;
+    }
+
+    .statsHeader {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .statItemBordered {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1rem;
+    }
+
+    .statValue {
+        font-size: 2rem;
+    }
+
+    .statLabel {
+        font-size: 0.8rem;
+    }
+
+    .chartCard {
+        padding: 1rem;
+    }
+
+    .chartContainer {
+        height: 200px;
+    }
+
+    .chartWrapper {
+        min-height: 150px;
+    }
+
+    .singleResultPlaceholder {
+        height: 200px;
+    }
+
+    .placeholderCard {
+        padding: 1rem 1.5rem;
+    }
+
+    .placeholderText {
+        font-size: 0.8rem;
+        max-width: 250px;
+    }
+
+    .emptyChart {
+        height: 150px;
+    }
+
+    .emptyState {
+        padding: 2rem 1rem;
+    }
+
+    .emptyIconCircle {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .emptyTitle {
+        font-size: 1.2rem;
+    }
+
+    .emptyText {
+        max-width: 280px;
+        font-size: 0.85rem;
+    }
+
+    .resultCard {
+        padding: 1rem;
+    }
+
+    .resultHeader {
+        flex-direction: column;
+    }
+
+    .resultTitle {
+        font-size: 1rem;
+    }
+
+    .resultScore {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .scoreValue {
+        font-size: 1.25rem;
+    }
+
+    .statusBadge {
+        font-size: 0.7rem;
+    }
+
+    .actions {
+        gap: 0.75rem;
+    }
+
+    .reviewBtn {
+        padding: 6px 16px;
+        font-size: 0.85rem;
+    }
+
+    .bottomStatsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .statCard {
+        padding: 1rem;
+    }
+
+    .statCardIcon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 0.75rem;
+    }
+
+    .statCardIcon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .statCardValue {
+        font-size: 1.25rem;
+    }
+
+    .statCardTitle {
+        font-size: 0.8rem;
+    }
+
+    .statCardSubtext {
+        font-size: 0.7rem;
+    }
+}
+
+/* Tablet Responsive: @media (min-width: 640px) and (max-width: 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .filtersBar {
+        padding: 0.75rem;
+    }
+
+    .statsCard {
+        padding: 1.5rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .statValue {
+        font-size: 2.5rem;
+    }
+
+    .chartCard {
+        padding: 1.5rem;
+    }
+
+    .chartContainer {
+        height: 250px;
+    }
+
+    .resultCard {
+        padding: 1.25rem;
+    }
+
+    .bottomStatsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statCardValue {
+        font-size: 1.5rem;
+    }
+
+    .emptyState {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* Desktop: @media (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 2rem 2rem 2rem;
+    }
+}

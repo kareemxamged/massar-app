@@ -1,0 +1,88 @@
+{
+  "page": {
+    "title": "إعدادات النظام",
+    "subtitle": "إعداد العلامة التجارية والصيانة والميزات والإعلانات"
+  },
+  "tabs": {
+    "general": "عام",
+    "maintenance": "الصيانة",
+    "features": "تبديل الميزات",
+    "broadcast": "البث",
+    "academic": "الإعدادات الأكاديمية",
+    "status": "حالة المنصة"
+  },
+  "general": {
+    "branding": "العلامة التجارية",
+    "siteLogo": "شعار الموقع",
+    "logoHint": "PNG، JPG، SVG — الحد الأقصى 2 ميجابايت",
+    "uploadLogo": "رفع الشعار",
+    "siteName": "اسم الموقع",
+    "faviconUrl": "رابط أيقونة الموقع",
+    "faviconPlaceholder": "https://example.com/favicon.ico",
+    "contact": "معلومات التواصل",
+    "contactEmail": "البريد الإلكتروني للتواصل",
+    "contactEmailPlaceholder": "admin@example.com",
+    "supportPhone": "هاتف الدعم",
+    "supportPhonePlaceholder": "+966 5X XXX XXXX",
+    "socialLinks": "روابط التواصل الاجتماعي",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جارٍ الحفظ…",
+    "uploading": "جارٍ الرفع…",
+    "logoError": "يجب أن يكون حجم الصورة أقل من 2 ميجابايت"
+  },
+  "maintenance": {
+    "title": "وضع الصيانة",
+    "description": "عند التفعيل، يرى غير المديرين شاشة الصيانة بدلاً من التطبيق",
+    "toggle": "تفعيل وضع الصيانة",
+    "message": "رسالة الصيانة",
+    "messagePlaceholder": "النظام تحت الصيانة. يرجى المحاولة لاحقاً.",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جارٍ الحفظ…",
+    "warningTitle": "تحذير",
+    "warningBody": "تفعيل وضع الصيانة سيتسبب في تسجيل خروج جميع المستخدمين غير المديرين فوراً."
+  },
+  "features": {
+    "title": "تبديل الميزات",
+    "studentChat": "تفعيل محادثة الطلاب",
+    "studentChatDesc": "السماح للطلاب بإرسال رسائل لبعضهم وللمعلمين",
+    "showResultsImmediately": "عرض نتائج الاختبار فوراً",
+    "showResultsDesc": "يرى الطلاب درجاتهم ونتائجهم مباشرة بعد التقديم",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جارٍ الحفظ…"
+  },
+  "broadcast": {
+    "title": "رسالة البث",
+    "description": "عرض لافتة إعلانية لجميع المستخدمين على مستوى النظام",
+    "messagePlaceholder": "أدخل إعلانك هنا…",
+    "clearMessage": "مسح الرسالة",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جارٍ الحفظ…",
+    "activeLabel": "بث نشط"
+  },
+  "toast": {
+    "saveSuccess": "تم حفظ الإعدادات بنجاح",
+    "saveError": "فشل حفظ الإعدادات",
+    "logoError": "فشل رفع الشعار",
+    "academicSaveSuccess": "تم حفظ التكوين الأكاديمي بنجاح"
+  },
+  "academic": {
+    "title": "الإعدادات الأكاديمية",
+    "levelsTitle": "إدارة المراحل الأكاديمية",
+    "addLevel": "إضافة مرحلة",
+    "majorsTitle": "التخصصات الأكاديمية",
+    "addMajor": "إضافة تخصص",
+    "name": "الاسم",
+    "code": "الكود",
+    "order": "الترتيب",
+    "description": "الوصف",
+    "action": "إجراء",
+    "emptyLevels": "لا توجد مراحل أكاديمية.",
+    "emptyMajors": "لا توجد تخصصات مسجلة."
+  },
+  "status": {
+    "title": "حالة المنصة",
+    "allowRegistration": "السماح بتسجيل الطلاب",
+    "allowRegistrationDesc": "تفعيل أو إيقاف تسجيل الطلاب الجدد في المنصة.",
+    "saveChanges": "حفظ حالة المنصة"
+  }
+}

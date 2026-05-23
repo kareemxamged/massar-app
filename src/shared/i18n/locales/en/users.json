@@ -1,0 +1,104 @@
+{
+  "students": {
+    "title": "Student Management",
+    "subtitle": "Manage student accounts and monitor enrollment"
+  },
+  "teachers": {
+    "title": "Teacher Management",
+    "subtitle": "Manage teacher accounts and course assignments"
+  },
+  "stats": {
+    "active": "Active",
+    "suspended": "Suspended"
+  },
+  "table": {
+    "user": "User",
+    "role": "Role",
+    "status": "Status",
+    "joined": "Joined",
+    "actions": "Actions",
+    "empty": "No users found matching your filters."
+  },
+  "status": {
+    "active": "Active",
+    "suspended": "Suspended",
+    "inactive": "Inactive"
+  },
+  "role": {
+    "student": "Student",
+    "teacher": "Teacher",
+    "admin": "Admin"
+  },
+  "actions": {
+    "editProfile": "Edit Profile",
+    "accountStats": "Account Stats",
+    "disableAccount": "Disable Account",
+    "enableAccount": "Enable Account",
+    "deleteAccount": "Delete Account"
+  },
+  "filters": {
+    "searchPlaceholder": "Search by name, email, or ID...",
+    "allStatus": "All Status",
+    "addUser": "Add User"
+  },
+  "confirm": {
+    "suspend": {
+      "title": "Disable Account",
+      "message": "Suspend {{name}}? They will be immediately locked out until reactivated.",
+      "confirmLabel": "Disable"
+    },
+    "activate": {
+      "title": "Enable Account",
+      "message": "Reactivate {{name}}? They will regain full platform access.",
+      "confirmLabel": "Enable"
+    },
+    "delete": {
+      "title": "Delete Account",
+      "message": "Permanently delete {{name}}? This action cannot be undone.",
+      "confirmLabel": "Delete"
+    },
+    "processing": "Processing...",
+    "cancel": "Cancel"
+  },
+  "modal": {
+    "editTitle": "Edit Profile",
+    "addStudentTitle": "Add New Student",
+    "addTeacherTitle": "Add New Teacher",
+    "createAccount": "Create a new user account",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Full name",
+    "enterFullName": "Enter full name",
+    "email": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "Minimum 8 characters",
+    "passwordHint": "Must be at least 8 characters",
+    "department": "Department",
+    "departmentPlaceholder": "e.g. Computer Science",
+    "specialization": "Specialization",
+    "specializationPlaceholder": "e.g. Software Engineering",
+    "major": "Major",
+    "selectMajor": "Select a major",
+    "academicLevel": "Academic Level",
+    "selectLevel": "Select a level",
+    "required": "*",
+    "cancel": "Cancel",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "creating": "Creating...",
+    "createStudent": "Create Student",
+    "createTeacher": "Create Teacher",
+    "failedSave": "Failed to save changes.",
+    "fullNameRequired": "Full name is required."
+  },
+  "statsModal": {
+    "title": "Account Stats",
+    "coursesCreated": "Courses Created",
+    "enrolledCourses": "Enrolled Courses",
+    "examsCreated": "Exams Created",
+    "examsTaken": "Exams Taken",
+    "memberSince": "Member Since",
+    "lastLogin": "Last Login",
+    "never": "Never",
+    "close": "Close"
+  }
+}

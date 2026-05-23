@@ -1,0 +1,164 @@
+{
+  "manageExams": {
+    "title": "Manage Exams",
+    "subtitle": "Control visibility, randomize questions, and manage your assessments.",
+    "createBtn": "Create New Exam",
+    "searchPlaceholder": "Search by title or subject...",
+    "sortNewest": "Newest First",
+    "sortOldest": "Oldest First",
+    "loading": "Loading exams...",
+    "noExams": "No exams found",
+    "noExamsHint": "Try adjusting your filters or create a new exam.",
+    "evergreen": "Evergreen",
+    "awaitingApproval": "Awaiting admin approval",
+    "editOnlyUpcoming": "Only upcoming exams can be edited.",
+    "statusFilter": {
+      "All": "All Statuses",
+      "Always Available": "Always Available",
+      "Active": "Active",
+      "Upcoming": "Upcoming",
+      "Disabled": "Disabled",
+      "Expired": "Expired"
+    },
+    "table": {
+      "examDetails": "Exam Details",
+      "schedule": "Schedule",
+      "metrics": "Metrics",
+      "settings": "Settings",
+      "actions": "Actions",
+      "questions": "Qs",
+      "points": "Pts",
+      "mins": "mins"
+    },
+    "status": {
+      "AlwaysAvailable": "Always Available",
+      "Active": "Active",
+      "Upcoming": "Upcoming",
+      "Expired": "Expired",
+      "Disabled": "Disabled"
+    },
+    "approval": {
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "pending": "Pending Review"
+    },
+    "rejectionReason": "Rejection reason",
+    "toggles": {
+      "published": "Published",
+      "shuffleQs": "Shuffle Qs"
+    },
+    "actions": {
+      "edit": "Edit Exam",
+      "delete": "Delete",
+      "duplicate": "Duplicate",
+      "submissions": "Submissions",
+      "quickView": "Quick View"
+    },
+    "stats": {
+      "submissions": "Submissions",
+      "totalQuestions": "Total Questions",
+      "linkedCourse": "Course"
+    },
+    "deleteModal": {
+      "title": "Delete Exam?",
+      "messagePre": "Are you sure you want to delete",
+      "messagePost": "? This action cannot be undone and may remove associated student submissions.",
+      "confirm": "Yes, Delete Exam",
+      "cancel": "Cancel"
+    },
+    "duplicateModal": {
+      "title": "Duplicate Exam?",
+      "messagePre": "Are you sure you want to create a copy of",
+      "messagePost": "? The questions and settings will be cloned as a new \"Upcoming\" exam.",
+      "confirm": "Yes, Duplicate",
+      "cancel": "Cancel"
+    }
+  },
+  "editExamModal": {
+    "title": "Edit Exam",
+    "subtitle": "Modify questions, settings, and schedule",
+    "loading": "Loading exam data for editing...",
+    "steps": {
+      "examInfo": "Exam Info",
+      "questionBuilder": "Question Builder",
+      "settingsPublish": "Settings & Publish"
+    },
+    "prevStep": "Previous Step",
+    "nextStep": "Next Step",
+    "saving": "Saving...",
+    "completeEdit": "Complete Edit",
+    "toasts": {
+      "fixErrors": "Please fix the errors before continuing.",
+      "updateSuccess": "Exam updated successfully!",
+      "loadFailed": "Failed to open exam editor.",
+      "saveFailed": "Failed to save changes."
+    },
+    "form": {
+      "step1": {
+        "title": "Basic Information",
+        "examTitle": "Exam Title *",
+        "examTitlePlaceholder": "e.g. Midterm Mathematics Exam",
+        "subjectArea": "Subject Area *",
+        "subjectPlaceholder": "e.g. Math, Science",
+        "linkToCourse": "Link to Course *",
+        "standaloneExam": "-- Standalone Exam --",
+        "description": "Description & Instructions",
+        "descriptionPlaceholder": "Provide instructions for the students..."
+      },
+      "step2": {
+        "title": "Question Builder",
+        "subtitle": "Add and configure questions for your exam",
+        "fromBank": "From Bank",
+        "aiGenerate": "AI Generate",
+        "noQuestionsTitle": "No Questions Yet",
+        "noQuestionsHint": "Start building your exam by adding your first question manually.",
+        "addManually": "+ Add Manually",
+        "importFromBank": "Import from Bank",
+        "aiDefaults": "AI Defaults",
+        "addAnother": "Add Another Question"
+      },
+      "step3": {
+        "title": "Exam Settings",
+        "subtitle": "Configure time limits, passing requirements, and behavior.",
+        "timingSection": "Timing & Scheduling",
+        "startTime": "Start Time *",
+        "startTimeHint": "When students can start taking the exam.",
+        "endTime": "End Time / Hard Deadline *",
+        "endTimeHint": "Exam forcefully expires here regardless of student duration.",
+        "duration": "Duration (in minutes) *",
+        "gradingSection": "Grading & Security",
+        "passingScore": "Passing Score (%) *",
+        "passingScoreHint": "Minimum percentage required to pass."
+      }
+    }
+  },
+  "submissionsModal": {
+    "submissions": "Submissions",
+    "avgScore": "Avg Score",
+    "exportExcel": "Export Excel",
+    "closeModal": "Close modal",
+    "loading": "Loading submissions...",
+    "errorTitle": "Error Loading Submissions",
+    "tryAgain": "Try Again",
+    "noSubmissions": "No submissions yet",
+    "noSubmissionsHint": "When students take this exam, their results will appear here.",
+    "table": {
+      "student": "Student",
+      "startedAt": "Started At",
+      "status": "Status",
+      "score": "Score",
+      "actions": "Actions"
+    },
+    "status": {
+      "graded": "Graded",
+      "inProgress": "In Progress",
+      "pending": "Pending"
+    },
+    "clickToView": "Click to view student profile",
+    "studentIdPrefix": "ID",
+    "profileBtn": "Profile",
+    "reviewBtn": "Review",
+    "exported": "Exported {{count}} student grades",
+    "noGraded": "No graded submissions to export"
+  }
+}

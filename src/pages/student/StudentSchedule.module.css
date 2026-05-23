@@ -1,0 +1,451 @@
+/* --- Container & Header --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.pageSubtitle {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* --- Controls Bar --- */
+.controlsBar {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* --- View Toggle Group --- */
+.viewToggleGroup {
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.viewToggleBtn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.viewToggleBtnActive {
+    background: var(--primary);
+    color: white;
+}
+
+.viewToggleBtn:hover {
+    color: white;
+}
+
+/* --- Month Navigation --- */
+.navGroup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navBtn {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+.navBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navLabel {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* --- Calendar Grid Container --- */
+.calendarContainer {
+    padding: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    min-width: 700px;
+}
+
+/* --- Day of Week Headers --- */
+.dayHeader {
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* --- Day Cell --- */
+.dayCell {
+    min-height: 120px;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.2s;
+    cursor: default;
+}
+
+.dayCellHasExams {
+    cursor: pointer;
+}
+
+.dayCellHasExams:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.dayCellToday {
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px solid var(--primary);
+}
+
+.dayCellOutside {
+    background: rgba(255, 255, 255, 0.01);
+    opacity: 0.5;
+}
+
+.dayCellEmpty {
+    background: transparent;
+    border: none;
+}
+
+/* --- Day Number --- */
+.dayNumber {
+    font-weight: bold;
+    color: var(--text-main);
+    margin-bottom: 4px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.dayNumberToday {
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* --- Exam Chip (inside day cell) --- */
+.examChip {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.examChip:hover {
+    opacity: 0.8;
+}
+
+/* --- List View --- */
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.listItem {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    border-radius: 12px;
+}
+
+.listItem:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.listItemContent {
+    min-width: 0;
+    flex: 1;
+}
+
+.listItemTitle {
+    margin: 0;
+    font-size: 1.1rem;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.listItemDate {
+    margin: 4px 0 0 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.statusBadge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.listEmpty {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* --- Legend --- */
+.legend {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legendDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legendLabel {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- Loading --- */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+}
+
+/* --- Exam Chips Container --- */
+.examChipsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Mobile Responsive: @media (max-width: 639px) */
+@media (max-width: 639px) {
+    .container {
+        padding: 0 0.75rem 1.5rem 0.75rem;
+    }
+
+    .pageTitle {
+        font-size: 1.25rem;
+    }
+
+    .pageSubtitle {
+        font-size: 0.85rem;
+    }
+
+    .controlsBar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem;
+    }
+
+    .viewToggleGroup {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .viewToggleBtn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        gap: 4px;
+    }
+
+    .viewToggleBtn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navGroup {
+        width: 100%;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .navLabel {
+        font-size: 0.95rem;
+        min-width: 0;
+        flex: 1;
+    }
+
+    .navBtn {
+        padding: 6px;
+        min-width: 32px;
+        min-height: 32px;
+    }
+
+    .calendarContainer {
+        padding: 0.75rem;
+    }
+
+    .calendarGrid {
+        min-width: 560px;
+    }
+
+    .dayCell {
+        min-height: 80px;
+        padding: 0.35rem;
+    }
+
+    .dayNumber {
+        font-size: 0.75rem;
+        width: 20px;
+        height: 20px;
+    }
+
+    .dayHeader {
+        font-size: 0.65rem;
+        padding: 0.35rem;
+    }
+
+    .examChip {
+        font-size: 0.6rem;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+
+    .listItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .listItemTitle {
+        font-size: 0.95rem;
+    }
+
+    .statusBadge {
+        margin-left: 0;
+        font-size: 0.75rem;
+        padding: 3px 10px;
+    }
+
+    .legend {
+        gap: 1rem;
+    }
+
+    .legendLabel {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablet Responsive: @media (min-width: 640px) and (max-width: 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .controlsBar {
+        padding: 0.75rem;
+    }
+
+    .viewToggleBtn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .navLabel {
+        font-size: 1rem;
+        min-width: 160px;
+    }
+
+    .calendarGrid {
+        min-width: 600px;
+    }
+
+    .dayCell {
+        min-height: 100px;
+    }
+
+    .dayHeader {
+        font-size: 0.7rem;
+    }
+
+    .legend {
+        gap: 1.5rem;
+    }
+}
+
+/* Desktop: @media (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 2rem 2rem 2rem;
+    }
+}

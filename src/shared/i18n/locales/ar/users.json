@@ -1,0 +1,104 @@
+{
+  "students": {
+    "title": "إدارة الطلاب",
+    "subtitle": "إدارة حسابات الطلاب ومتابعة التسجيلات"
+  },
+  "teachers": {
+    "title": "إدارة الأساتذة",
+    "subtitle": "إدارة حسابات الأساتذة وتوزيع المقررات"
+  },
+  "stats": {
+    "active": "نشط",
+    "suspended": "موقوف"
+  },
+  "table": {
+    "user": "المستخدم",
+    "role": "الدور",
+    "status": "الحالة",
+    "joined": "تاريخ الانضمام",
+    "actions": "الإجراءات",
+    "empty": "لا يوجد مستخدمون يطابقون معايير البحث."
+  },
+  "status": {
+    "active": "نشط",
+    "suspended": "موقوف",
+    "inactive": "غير نشط"
+  },
+  "role": {
+    "student": "طالب",
+    "teacher": "أستاذ",
+    "admin": "مسؤول"
+  },
+  "actions": {
+    "editProfile": "تعديل الملف",
+    "accountStats": "إحصائيات الحساب",
+    "disableAccount": "تعطيل الحساب",
+    "enableAccount": "تفعيل الحساب",
+    "deleteAccount": "حذف الحساب"
+  },
+  "filters": {
+    "searchPlaceholder": "ابحث بالاسم أو البريد أو المعرّف...",
+    "allStatus": "كل الحالات",
+    "addUser": "إضافة مستخدم"
+  },
+  "confirm": {
+    "suspend": {
+      "title": "تعطيل الحساب",
+      "message": "هل تريد تعليق {{name}}؟ سيتم حظره فورًا حتى إعادة التفعيل.",
+      "confirmLabel": "تعطيل"
+    },
+    "activate": {
+      "title": "تفعيل الحساب",
+      "message": "هل تريد إعادة تفعيل {{name}}؟ سيستعيد صلاحية الوصول الكامل.",
+      "confirmLabel": "تفعيل"
+    },
+    "delete": {
+      "title": "حذف الحساب",
+      "message": "هل تريد حذف {{name}} نهائيًا؟ لا يمكن التراجع عن هذا الإجراء.",
+      "confirmLabel": "حذف"
+    },
+    "processing": "جاري التنفيذ...",
+    "cancel": "إلغاء"
+  },
+  "modal": {
+    "editTitle": "تعديل الملف الشخصي",
+    "addStudentTitle": "إضافة طالب جديد",
+    "addTeacherTitle": "إضافة أستاذ جديد",
+    "createAccount": "إنشاء حساب مستخدم جديد",
+    "fullName": "الاسم الكامل",
+    "fullNamePlaceholder": "الاسم الكامل",
+    "enterFullName": "أدخل الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "8 أحرف على الأقل",
+    "passwordHint": "يجب أن تكون 8 أحرف على الأقل",
+    "department": "القسم",
+    "departmentPlaceholder": "مثال: علوم الحاسوب",
+    "specialization": "التخصص",
+    "specializationPlaceholder": "مثال: هندسة البرمجيات",
+    "major": "التخصص الدراسي",
+    "selectMajor": "اختر التخصص",
+    "academicLevel": "المستوى الأكاديمي",
+    "selectLevel": "اختر المستوى",
+    "required": "*",
+    "cancel": "إلغاء",
+    "save": "حفظ التغييرات",
+    "saving": "جاري الحفظ...",
+    "creating": "جاري الإنشاء...",
+    "createStudent": "إنشاء طالب",
+    "createTeacher": "إنشاء أستاذ",
+    "failedSave": "فشل حفظ التغييرات.",
+    "fullNameRequired": "الاسم الكامل مطلوب."
+  },
+  "statsModal": {
+    "title": "إحصائيات الحساب",
+    "coursesCreated": "المقررات المُنشأة",
+    "enrolledCourses": "المقررات المُسجَّلة",
+    "examsCreated": "الاختبارات المُنشأة",
+    "examsTaken": "الاختبارات المؤداة",
+    "memberSince": "عضو منذ",
+    "lastLogin": "آخر دخول",
+    "never": "لا يوجد",
+    "close": "إغلاق"
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.stepWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-panel);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.completed {
+    background: var(--success);
+    border-color: var(--success);
+    color: white;
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 10px;
+}
+
+.lineCompleted {
+    background: var(--success);
+}

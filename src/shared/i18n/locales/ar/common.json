@@ -1,0 +1,816 @@
+{
+  "portal": {
+    "student": "بوابة الطالب",
+    "teacher": "بوابة الأستاذ"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "myExams": "اختباراتي",
+    "myResults": "نتائجي",
+    "schedule": "الجدول الزمني",
+    "myCourses": "مقرراتي",
+    "manageCourses": "إدارة المقررات",
+    "manageExams": "إدارة الاختبارات",
+    "students": "الطلاب",
+    "notifications": "الإشعارات",
+    "questionBank": "بنك الأسئلة",
+    "createExam": "إنشاء اختبار",
+    "teachers": "الأساتذة",
+    "content": "المحتوى",
+    "security": "الأمان",
+    "settings": "الإعدادات",
+    "myProfile": "ملفي الشخصي",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "expandSidebar": "توسيع الشريط الجانبي",
+    "collapseSidebar": "طيّ الشريط الجانبي",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+  "examsLibrary": {
+    "title": "مكتبة الامتحانات",
+    "subtitle": "تصفح امتحاناتك القادمة والنشطة والمنتهية بسهولة وابدأ الاختبار في الموعد المحدد.",
+    "searchPlaceholder": "ابحث عن امتحان...",
+    "filterStatuses": {
+      "all": "الكل",
+      "ongoing": "الامتحانات النشطة",
+      "upcoming": "الامتحانات القادمة",
+      "finished": "الامتحانات المنتهية"
+    },
+    "emptyStateTitle": "لا توجد امتحانات حالياً في هذا القسم",
+    "emptyStateDesc": "عندما يتم جدولة أو تفعيل امتحانات جديدة، ستظهر لك هنا مباشرة. يمكنك العودة لاحقاً.",
+    "badges": {
+      "ongoing": "نشط الآن",
+      "upcoming": "قادم",
+      "finished": "منتهي"
+    },
+    "buttons": {
+      "resume": "استئناف",
+      "startNow": "ابدأ الآن",
+      "viewResult": "عرض النتيجة",
+      "waiting": "في انتظار الموعد",
+      "details": "التفاصيل"
+    },
+    "minutes": "دقيقة",
+    "questions": "سؤال"
+  },
+  "examDetails": {
+    "loading": "جاري تحميل التفاصيل...",
+    "invalidLink": {
+      "title": "رابط غير صالح أو منتهي الصلاحية",
+      "description": "الامتحان الذي تبحث عنه غير موجود، أو تم إخفاؤه مؤقتًا من قبل المعلم.",
+      "returnBtn": "العودة للوحة التحكم"
+    },
+    "backToExams": "العودة للامتحانات",
+    "meta": {
+      "tutor": "المعلم",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "alwaysAvailable": "متاح دائماً",
+      "mins": "دقيقة"
+    },
+    "sections": {
+      "description": "الوصف والتعليمات",
+      "structure": "هيكل الامتحان",
+      "topics": "المواضيع",
+      "importantInstructions": "تعليمات هامة"
+    },
+    "structure": {
+      "totalQuestions": "إجمالي الأسئلة",
+      "totalMarks": "إجمالي الدرجات",
+      "questions": "أسئلة",
+      "marks": "درجات"
+    },
+    "topics": {
+      "none": "لا توجد مواضيع محددة."
+    },
+    "instructions": {
+      "default1": "يرجى التأكد من استقرار اتصالك بالإنترنت.",
+      "default2": "بمجرد البدء، لا يمكن إيقاف المؤقت.",
+      "default3": "لا تقم بتحديث الصفحة أثناء الامتحان."
+    },
+    "actions": {
+      "availability": "التوفر",
+      "startsIn": "يبدأ خلال",
+      "status": "الحالة",
+      "reviewResults": "مراجعة النتائج",
+      "resumeExam": "استئناف الامتحان",
+      "notStartedYet": "لم يبدأ بعد",
+      "startExamNow": "ابدأ الامتحان الآن",
+      "sessionProtected": "الجلسة محمية"
+    },
+    "modal": {
+      "title": "جاهز للبدء؟",
+      "check1": "اتصال ثابت بالإنترنت",
+      "check2": "بيئة خالية من المشتتات",
+      "check3": "تخصيص وقت كافٍ ({{min}} دقيقة)",
+      "warning": "لا يمكنك الإيقاف أو إعادة المحاولة بمجرد البدء.",
+      "cancel": "إلغاء",
+      "confirm": "نعم، ابدأ الامتحان"
+    }
+  },
+  "examEngine": {
+    "alerts": {
+      "unpublished": "قام المعلم بإلغاء نشر هذا الامتحان. تم إنهاء جلستك."
+    },
+    "errors": {
+      "failedToLoad": "فشل التحميل",
+      "retry": "إعادة الاتصال",
+      "notFound": "الامتحان غير موجود.",
+      "noQuestions": "لا توجد أسئلة متاحة لهذا الامتحان."
+    },
+    "header": {
+      "saved": "تم الحفظ",
+      "saving": "جاري الحفظ..."
+    },
+    "sidebar": {
+      "title": "خريطة الأسئلة",
+      "questionNum": "سؤال {{num}}",
+      "legend": {
+        "current": "الحالي",
+        "answered": "تمت الإجابة",
+        "flagged": "مُمحص",
+        "notAnswered": "غير مُجاب"
+      }
+    },
+    "footer": {
+      "previous": "السابق",
+      "overview": "نظرة عامة",
+      "marked": "تم التمحيص",
+      "mark": "تمحيص السؤال",
+      "finish": "إنهاء الامتحان",
+      "next": "التالي"
+    },
+    "question": {
+      "marks": "درجات",
+      "true": "صح",
+      "false": "خطأ"
+    },
+    "summary": {
+      "title": "ملخص الامتحان",
+      "answered": "مُجاب",
+      "flagged": "مُمحص",
+      "left": "متبقي",
+      "unansweredList": "الأسئلة غير المجابة:",
+      "backButton": "العودة للامتحان",
+      "finishButton": "إنهاء الامتحان"
+    },
+    "confirm": {
+      "title": "هل أنت متأكد أنك تريد الإنهاء؟",
+      "warning": "لا يمكنك العودة إلى الامتحان بعد التسليم.",
+      "minutesRemaining": "متبقي لديك {{min}} دقيقة.",
+      "unanswered": "لديك {{count}} أسئلة غير مجابة.",
+      "cancel": "إلغاء",
+      "submit": "نعم، قم بالتسليم"
+    }
+  },
+  "examResult": {
+    "loading": "جاري إنشاء التقرير...",
+    "notFound": {
+      "title": "النتيجة غير موجودة",
+      "message": "لم نتمكن من العثور على تسليم لهذا الامتحان. يبدو أنك لم تؤده بعد أو أن السجل مفقود."
+    },
+    "backToLibrary": "العودة لمكتبة الامتحانات",
+    "header": {
+      "passed": "ناجح",
+      "failed": "راسب",
+      "excellentWork": "🎉 تم اجتياز الامتحان بنجاح!",
+      "needsImprovement": "📘 لم تجتز الامتحان — استمر في التدرب!",
+      "points": "نقاط"
+    },
+    "stats": {
+      "correct": "صحيح",
+      "wrong": "خاطئ",
+      "skipped": "متخطى",
+      "time": "الوقت",
+      "rank": "الترتيب"
+    },
+    "breakdown": {
+      "title": "تحليل الأداء",
+      "multipleChoice": "خيارات متعددة",
+      "trueFalse": "صح / خطأ",
+      "essay": "الأسئلة المقالية",
+      "code": "الأسئلة البرمجية",
+      "pending": "قيد المراجعة",
+      "questions": "أسئلة",
+      "correct": "صحيح",
+      "pts": "نقطة"
+    },
+    "feedback": {
+      "title": "تقييم المشرف",
+      "strengths": "نقاط القوة:",
+      "improve": "نقاط تحتاج للتحسين:",
+      "autoGrader": "التصحيح التلقائي للنظام",
+      "noPoints": "لم يتم تسجيل أي نقاط بعد. قد تكون بعض الأسئلة قيد المراجعة اليدوية.",
+      "autoGraded": "تعتمد هذه النتيجة على الأسئلة الموضوعية المصححة تلقائياً. المقالية قيد المراجعة اليدوية من قبل المعلم.",
+      "keepPracticing": "استمر في التدريب — ستصل إلى هدفك!",
+      "noWeakAreas": "لم يتم اكتشاف أي نقاط ضعف كبيرة.",
+      "correctFormat": "{{type}} ({{correct}}/{{total}} صحيحة)",
+      "awaitingReviewFormat": "{{type}} — بانتظار المراجعة اليدوية"
+    },
+    "perf": {
+      "excellent": "ممتاز",
+      "veryGood": "جيد جداً",
+      "good": "جيد",
+      "needsImprovement": "يحتاج تحسين",
+      "pendingReview": "قيد المراجعة"
+    },
+    "types": {
+      "mcq": "خيارات متعددة",
+      "truefalse": "صح / خطأ",
+      "essay": "مقال",
+      "code": "برمجة"
+    },
+    "chart": {
+      "title": "مقارنة الأداء",
+      "you": "أنت",
+      "classAvg": "متوسط الفصل",
+      "percentileMsg1": "لقد سجلت أعلى من",
+      "percentileMsg2": "من الطلاب الذين أدوا هذا الامتحان."
+    }
+  },
+  "examReview": {
+    "loading": "جاري تحميل المراجعة...",
+    "notFound": "بيانات المراجعة غير موجودة.",
+    "disabled": {
+      "title": "المراجعة غير متاحة",
+      "message": "قام المعلم بتعطيل مراجعة هذا الامتحان."
+    },
+    "backToResult": "العودة للنتيجة",
+    "title": "مراجعة:",
+    "totalScore": "الدرجة الإجمالية",
+    "filters": {
+      "all": "كل الأسئلة",
+      "correct": "صحيح",
+      "wrong": "خاطئ"
+    },
+    "noQuestions": "لم يتم العثور على أسئلة لهذا الفلتر.",
+    "card": {
+      "question": "سؤال",
+      "correct": "صحيح",
+      "incorrect": "خاطئ",
+      "pending": "في انتظار التقييم",
+      "yourAnswer": "إجابتك",
+      "correctAnswer": "الإجابة الصحيحة",
+      "noAnswer": "لم يتم تقديم إجابة.",
+      "noCode": "// لم يتم تقديم كود",
+      "yourCode": "الكود الخاص بك:",
+      "explanation": "شرح"
+    }
+  },
+  "studentResults": {
+    "pageTitle": "النتائج الخاصة بي",
+    "pageSubtitle": "تتبع تقدمك وحلل أداءك.",
+    "filters": {
+      "searchPlaceholder": "ابحث عن الامتحانات...",
+      "allSubjects": "جميع المواد",
+      "sort": {
+        "newest": "الأحدث أولاً",
+        "oldest": "الأقدم أولاً",
+        "highest": "الدرجة الأعلى",
+        "lowest": "الدرجة الأدنى"
+      },
+      "exportCsv": "تصدير CSV"
+    },
+    "stats": {
+      "header": "إحصائيات عامة",
+      "overallAverage": "المعدل التراكمي",
+      "totalExams": "إجمالي الامتحانات",
+      "highestScore": "أعلى درجة",
+      "lowestScore": "أدنى درجة",
+      "topResult": "أفضل نتيجة",
+      "bestPerformance": "أفضل أداء حتى الآن",
+      "progress": "التقدم",
+      "vsLastMonth": "مقارنة بالشهر الماضي",
+      "accuracy": "الدقة",
+      "correctAnswers": "إجابات صحيحة",
+      "avgSpeed": "متوسط السرعة",
+      "perExam": "لكل امتحان"
+    },
+    "chart": {
+      "title": "مؤشر الأداء الدراسي",
+      "score": "الدرجة",
+      "baselineTitle": "تم إنشاء الأساس",
+      "baselineText1": "لقد سجلت",
+      "baselineText2": "في امتحانك الأول. قم بأداء المزيد من الامتحانات لفتح التتبع المباشر للأداء!",
+      "emptyChart": "بيانات غير كافية. قم بأداء امتحانك الأول لعرض الإحصائيات."
+    },
+    "list": {
+      "emptyTitle": "لا توجد نتائج",
+      "emptyText": "لم نتمكن من العثور على أي امتحانات تطابق معايير البحث الحالية. حاول تعديل الفلاتر لرؤية المزيد.",
+      "general": "عام",
+      "viewDetails": "عرض التفاصيل",
+      "reviewAnswers": "مراجعة الإجابات",
+      "passed": "ناجح",
+      "failed": "راسب"
+    }
+  },
+  "studentSchedule": {
+    "pageTitle": "جدول الامتحانات",
+    "pageSubtitle": "ابق منظماً ولا تفوت أي امتحان قادم.",
+    "views": {
+      "month": "شهر",
+      "week": "أسبوع",
+      "list": "قائمة"
+    },
+    "nav": {
+      "weekOf": "أسبوع"
+    },
+    "legend": {
+      "upcoming": "قادم",
+      "today": "اليوم",
+      "completed": "مكتمل",
+      "missed": "فائت / متأخر"
+    },
+    "calendar": {
+      "sunday": "الأحد",
+      "monday": "الإثنين",
+      "tuesday": "الثلاثاء",
+      "wednesday": "الأربعاء",
+      "thursday": "الخميس",
+      "friday": "الجمعة",
+      "saturday": "السبت"
+    },
+    "list": {
+      "empty": "لا توجد امتحانات في هذا الشهر.",
+      "at": "في",
+      "countdownPrefix": "باقي ",
+      "days": " أيام"
+    },
+    "status": {
+      "UPCOMING": "قادم",
+      "TODAY": "اليوم",
+      "COMPLETED": "مكتمل",
+      "MISSED": "فائت"
+    }
+  },
+  "studentCourses": {
+    "pageTitle": "كورساتي",
+    "pageSubtitle": "إدارة الكورسات المسجلة وعرض التفاصيل.",
+    "registerBtn": "تسجيل كورس جديد",
+    "searchPlaceholder": "ابحث عن كورس...",
+    "allSemesters": "كل الفصول الدراسية",
+    "allDepartments": "كل الأقسام",
+    "tabs": {
+      "current": "الحالية",
+      "past": "السابقة",
+      "all": "الكل",
+      "courses": "الكورسات"
+    },
+    "card": {
+      "viewDetails": "الدخول للكورس",
+      "courseInfo": "معلومات الكورس",
+      "credits": "الساعات",
+      "semester": "الفصل",
+      "department": "القسم",
+      "courseProgress": "شريط التقدم",
+      "performance": "الأداء",
+      "examsTaken": "الامتحانات المنجزة",
+      "averageScore": "متوسط الدرجة",
+      "upcoming": "قادم",
+      "noUpcoming": "لا توجد امتحانات قادمة",
+      "actions": {
+        "exams": "امتحانات",
+        "grades": "درجات",
+        "materials": "مواد",
+        "report": "إبلاغ"
+      }
+    },
+    "sidebar": {
+      "generalStats": "إحصائيات عامة",
+      "cumulativeGpa": "المعدل التراكمي",
+      "creditsEarned": "الساعات المكتسبة",
+      "creditsRemaining": "الساعات المتبقية",
+      "degreeProgress": "التقدم في الدرجة"
+    },
+    "reportSuccess": "تم إرسال البلاغ بنجاح. سيقوم فريقنا بمراجعته."
+  },
+  "courseDetails": {
+    "loading": "جاري تحميل الكورس…",
+    "notFound": "الكورس غير موجود.",
+    "instructor": "المدرس",
+    "department": "القسم",
+    "credits": "الساعات",
+    "semester": "الفصل",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "exams": "الامتحانات",
+      "grades": "الدرجات",
+      "materials": "المحتوى العلمي"
+    },
+    "overview": {
+      "aboutCourse": "حول هذا الكورس",
+      "noDescription": "لا يوجد وصف محدد.",
+      "courseHealth": "صحة الكورس",
+      "averageGrade": "معدل الدرجات",
+      "attendance": "الحضور",
+      "participation": "المشاركة",
+      "recentResults": "أحدث النتائج",
+      "viewAll": "عرض الكل",
+      "noResults": "ﻻ توجد نتائج بعد.",
+      "courseMaterials": "مواد الكورس",
+      "noMaterials": "لا توجد مواد بعد."
+    },
+    "upcomingExams": "الامتحانات القادمة",
+    "noUpcomingExams": "لا توجد امتحانات قادمة.",
+    "viewDetails": "عرض التفاصيل",
+    "exams": {
+      "noExams": "لا توجد امتحانات لهذا الكورس بعد.",
+      "alwaysAvailable": "متاح دائماً",
+      "questions": "أسئلة",
+      "min": "دقيقة",
+      "viewResult": "عرض النتيجة",
+      "startNow": "ابدأ الآن",
+      "locked": "مغلق",
+      "missed": "فائت"
+    },
+    "grades": {
+      "totalPoints": "مجموع النقاط المكتسبة",
+      "noGrades": "لا توجد درجات بعد.",
+      "grade": "الدرجة",
+      "submittedOn": "تم التسليم في"
+    },
+    "materials": {
+      "noMaterialsTitle": "لا توجد مواد علمية بعد.",
+      "noMaterialsDesc": "ستظهر المرفقات هنا بمجرد أن يقوم المدرس برفعها.",
+      "general": "عام",
+      "week": "أسبوع",
+      "viewed": "شوهد",
+      "type": {
+        "pdf": "ملف PDF",
+        "video": "فيديو",
+        "slides": "شرائح",
+        "link": "رابط خارجي",
+        "code": "كود برمجي"
+      },
+      "action": {
+        "download": "تحميل",
+        "watch": "شاهد",
+        "open": "فتح"
+      },
+      "markViewed": "تحديد كمقروء",
+      "markUnviewed": "تحديد كغير مقروء"
+    },
+    "status": {
+      "upcoming": "قادم",
+      "active": "نشط",
+      "submitted": "تم التسليم",
+      "completed": "مكتمل"
+    }
+  },
+  "studentProfile": {
+    "personalTab": {
+      "title": "المعلومات الشخصية",
+      "subtitle": "يرجى التواصل مع الإدارة لتعديل البيانات.",
+      "fullName": "الاسم بالكامل",
+      "studentId": "الرقم الجامعي",
+      "major": "التخصص",
+      "levelYear": "المستوى / السنة",
+      "emailAddress": "البريد الإلكتروني",
+      "mobileNumber": "رقم الهاتف",
+      "dateOfBirth": "تاريخ الميلاد",
+      "level": "مستوى",
+      "na": "غير متوفر"
+    },
+    "securityTab": {
+      "title": "الأمان وتسجيل الدخول",
+      "subtitle": "تحديث كلمة المرور. سيتم تسجيل خروجك من جميع الأجهزة الأخرى.",
+      "secured": "مؤمن",
+      "currentPassword": "كلمة المرور الحالية",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "updatePassword": "تحديث كلمة المرور",
+      "updating": "جاري التحديث...",
+      "verificationRequired": "مطلوب تحقق إضافي",
+      "verificationDesc": "نظراً لتفعيل المصادقة الثنائية، يرجى إدخال رمز تطبيق المصادقة المكون من 6 أرقام لتأكيد تغيير كلمة المرور.",
+      "enterCode": "أدخل الرمز (6 أرقام)",
+      "cancel": "إلغاء",
+      "verifyContinue": "تحقق ومتابعة",
+      "verifying": "جاري التحقق...",
+      "twoFactorAuth": "المصادقة الثنائية (TOTP)",
+      "scanQr": "مسح رمز الاستجابة السريعة",
+      "scanDesc": "استخدم Google Authenticator أو تطبيق مشابه لمسح الرمز.",
+      "manualKey": "إذا لم تتمكن من مسح الرمز، أدخل هذا المفتاح يدوياً في تطبيقك.",
+      "backupWarning": "احفظ هذا المفتاح! إنه طريقتك الوحيدة للاسترداد.",
+      "verify": "تحقق",
+      "authApp": "تطبيق المصادقة",
+      "authAppDesc": "أضف طبقة أمان إضافية عبر تطبيق TOTP",
+      "active": "نشط",
+      "disabled": "معطل",
+      "enable2FA": "تفعيل",
+      "disable2FA": "تعطيل",
+      "passwordStrength": "قوة كلمة المرور",
+      "weak": "ضعيفة",
+      "fair": "مقبولة",
+      "good": "جيدة",
+      "strong": "قوية",
+      "veryStrong": "قوية جداً",
+      "req8Chars": "8+ أحرف",
+      "reqUppercase": "حرف كبير",
+      "reqNumber": "رقم",
+      "reqSpecial": "رمز خاص",
+      "enterCurrentPw": "أدخل كلمة المرور الحالية",
+      "createStrongPw": "أنشئ كلمة مرور قوية",
+      "repeatNewPw": "أعد إدخال كلمة المرور"
+    },
+    "academicTab": {
+      "performance": "الأداء الأكاديمي",
+      "performanceDesc": "محسوب من جميع نتائج الامتحانات المقدمة.",
+      "totalExams": "إجمالي الامتحانات",
+      "avgScore": "متوسط الدرجات",
+      "passRate": "نسبة النجاح",
+      "exams": "الامتحانات",
+      "studyHours": "ساعات الدراسة",
+      "attendance": "الحضور",
+      "achievements": "الإنجازات الأخيرة",
+      "highAchiever": "متفوق",
+      "highAchieverDesc": "متوسط الدرجات أعلى من 80%",
+      "examVeteran": "خبير امتحانات",
+      "examVeteranDesc": "أكمل 5 امتحانات أو أكثر",
+      "noAchievements": "لا توجد إنجازات بعد — أكمل امتحانك الأول لفتح الأوسمة!"
+    },
+    "preferencesTab": {
+      "title": "التفضيلات العامة",
+      "subtitle": "تخصيص تجربة العرض الخاصة بك.",
+      "language": "اللغة",
+      "languageDesc": "لغة عرض الواجهة",
+      "appearance": "المظهر",
+      "appearanceDesc": "تفضيل السمة",
+      "dark": "داكن",
+      "light": "فاتح",
+      "notifications": "إشعارات البريد الإلكتروني",
+      "notifDesc": "احصل على إشعارات عند توفر امتحانات جديدة",
+      "enabled": "مفعل",
+      "pushNotif": "الإشعارات الفورية",
+      "pushNotifDesc": "تنبيهات سطح المكتب (قريباً)"
+    },
+    "header": {
+      "changePhoto": "تغيير",
+      "uploading": "جاري التحديث...",
+      "removePhoto": "إزالة الصورة",
+      "student": "طالب",
+      "joined": "تاريخ الانضمام",
+      "online": "متصل"
+    },
+    "tabs": {
+      "personal": "شخصي",
+      "security": "الأمان",
+      "academic": "أكاديمي",
+      "preferences": "تفضيلات"
+    }
+  },
+  "teacherDashboard": {
+    "welcomeBack": "مرحباً بعودتك",
+    "hereIsYourUpdate": "إليك آخر تحديثات فصولك وطلابك.",
+    "totalStudents": "إجمالي الطلاب",
+    "materials": "المرفقات العلمية",
+    "pendingSubmissions": "التسليمات المعلقة",
+    "enrolledStudents": "الطلاب المسجلين بجميع كورساتك",
+    "indexedDocuments": "الكورسات المحللة بالذكاء الاصطناعي",
+    "courseMaterials": "ملفات المقررات",
+    "activeCourses": "الكورسات النشطة",
+    "publishedCourses": "الكورسات المنشورة حالياً",
+    "completedExams": "الامتحانات المكتملة",
+    "past30Days": "في آخر 30 يوماً",
+    "completionRate": "نسبة الإكمال",
+    "avgScore": "متوسط درجات الطلاب",
+    "quickActions": "إجراءات سريعة",
+    "performance": "تحليل الأداء",
+    "recentActivity": "أحدث النشاطات",
+    "noActivity": "لا يوجد نشاط أخير",
+    "noActivitySub": "ابدأ بإنشاء امتحان أو إضافة محتوى علمي",
+    "upcomingExams": "الامتحانات القادمة",
+    "noExams": "لا توجد امتحانات قادمة",
+    "noExamsSub": "أنشئ امتحان للبدء",
+    "statusLive": "مباشر الآن",
+    "statusToday": "اليوم",
+    "statusTomorrow": "غداً",
+    "statusUpcoming": "قادم",
+    "noDate": "لم يتم تعيين تاريخ",
+    "aiGenerator": "إنشاء أسئلة بالذكاء الاصطناعي",
+    "aiGeneratorDesc": "توليد أسئلة من المستندات",
+    "createExam": "إنشاء امتحان",
+    "createExamDesc": "بناء امتحان جديد يدوياً",
+    "addMaterial": "إضافة محتوى",
+    "addMaterialDesc": "رفع مواد الكورس",
+    "questionBank": "بنك الأسئلة",
+    "questionBankDesc": "إدارة الأسئلة المحفوظة",
+    "noData": "لا توجد بيانات امتحانات",
+    "noDataSub": "قم بإنشاء امتحانات واستقبال إجابات لرؤية الأداء",
+    "emptyTitle": "ابدأ رحلة التدريس",
+    "emptyDesc": "أنشئ امتحانك الأول، ارفع محتوى الكورس، أو دع الذكاء الاصطناعي يولد لك الأسئلة.",
+    "addCourse": "إضافة كورس"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "refresh": "تحديث الإشعارات",
+    "loading": "جاري التحميل...",
+    "empty": "لا توجد إشعارات بعد",
+    "markAsRead": "تحديد كمقروء",
+    "markAllRead": "تحديد الكل كمقروء",
+    "from": "من:",
+    "justNow": "الآن",
+    "minsAgo": "قبل {{count}} دقيقة",
+    "hoursAgo": "قبل {{count}} ساعة",
+    "daysAgo": "قبل {{count}} يوم",
+    "pageTitle": "الإشعارات",
+    "pageSubtitle": "إرسال التنبيهات والإعلانات للطلاب",
+    "composeTitle": "إنشاء إشعار",
+    "targetAudience": "الجمهور المستهدف",
+    "targetTypes": {
+      "global": "الكل",
+      "globalLabel": "جميع الطلاب",
+      "individual": "فردي",
+      "level": "مستوى",
+      "major": "تخصص"
+    },
+    "selectStudent": "تحديد طالب",
+    "searchStudentPlaceholder": "ابحث بالاسم أو الرقم الجامعي...",
+    "selectLevel": "تحديد مستوى",
+    "chooseLevel": "اختر مستوى...",
+    "selectMajor": "تحديد تخصص",
+    "chooseMajor": "اختر تخصص...",
+    "titleLabel": "العنوان",
+    "titlePlaceholder": "عنوان الإشعار...",
+    "titleRequired": "العنوان مطلوب",
+    "messageLabel": "الرسالة",
+    "messagePlaceholder": "أكتب رسالتك هنا...",
+    "messageRequired": "الرسالة مطلوبة",
+    "sending": "جاري الإرسال...",
+    "sendBtn": "إرسال الإشعار",
+    "sentSuccess": "تم إرسال الإشعار بنجاح!",
+    "sendFailed": "فشل الإرسال",
+    "sentHistory": "سجل المرسلة",
+    "noSentHistory": "لا توجد إشعارات مرسلة بعد",
+    "deleteConfirmTitle": "حذف الإشعار",
+    "deletedSuccess": "تم حذف الإشعار",
+    "deleteFailed": "فشل الحذف",
+    "levelPrefix": "مستوى:",
+    "majorPrefix": "تخصص:",
+    "system": {
+      "courseApprovedTitle": "موافقة: \"{{contentTitle}}\"",
+      "courseApprovedMsg": "تمت الموافقة على الكورس \"{{contentTitle}}\" وهو الآن متاح للطلاب.",
+      "courseRejectedTitle": "رفض الكورس: \"{{contentTitle}}\"",
+      "courseRejectedMsg": "تم رفض الكورس \"{{contentTitle}}\" من قبل المسؤول.\n\nالسبب: {{notes}}",
+      "examApprovedTitle": "موافقة: \"{{contentTitle}}\"",
+      "examApprovedMsg": "تمت الموافقة على الامتحان \"{{contentTitle}}\" وهو الآن متاح للطلاب.",
+      "examRejectedTitle": "رفض الامتحان: \"{{contentTitle}}\"",
+      "examRejectedMsg": "تم رفض الامتحان \"{{contentTitle}}\" من قبل المسؤول.\n\nالسبب: {{notes}}",
+      "materialApprovedTitle": "موافقة: \"{{contentTitle}}\"",
+      "materialApprovedMsg": "تمت الموافقة على المحتوى \"{{contentTitle}}\" وهو الآن متاح.",
+      "materialRejectedTitle": "رفض المحتوى: \"{{contentTitle}}\"",
+      "materialRejectedMsg": "تم رفض المحتوى \"{{contentTitle}}\" من قبل المسؤول.\n\nالسبب: {{notes}}"
+    }
+  },
+  "teacherCourses": {
+    "title": "إدارة الكورسات",
+    "subtitle": "إنشاء وإدارة الكورسات التعليمية الخاصة بك",
+    "createCourse": "إضافة كورس جديد",
+    "searchPlaceholder": "ابحث عن الكورسات بالاسم أو الكود...",
+    "noCoursesYet": "لا توجد كورسات بعد",
+    "noCoursesDesc": "لم تقم بإنشاء أي كورسات. ابدأ بإضافة الكورس الأول الخاص بك.",
+    "addFirstCourse": "أضف الكورس الأول الخاص بك",
+    "status": {
+      "active": "نشط",
+      "disabled": "معطل",
+      "hidden": "مخفي",
+      "pendingReview": "قيد المراجعة",
+      "approved": "مقبول",
+      "rejected": "مرفوض"
+    },
+    "hideCourse": "إخفاء الكورس",
+    "showCourse": "إظهار الكورس",
+    "awaitingReviewDesc": "في انتظار مراجعة المسؤول قبل نشر الكورس.",
+    "rejectedDesc": "تم رفض الكورس — تواصل مع المسؤول",
+    "rejectionReason": "سبب الرفض:",
+    "noDescription": "لا يوجد وصف مدخل.",
+    "students": "الطلاب",
+    "materials": "محتوى",
+    "statsTooltip": "إحصائيات الكورس",
+    "contentTooltip": "محتوى الكورس (مواد وامتحانات)",
+    "studentsTooltip": "إدارة الطلاب",
+    "editTooltip": "تعديل إعدادات الكورس",
+    "deleteTooltip": "حذف الكورس",
+    "modals": {
+      "deleteConfirm": {
+        "title": "حذف الكورس",
+        "areYouSure": "هل أنت متأكد أنك تريد حذف",
+        "warning": "لا يمكن التراجع عن هذا الإجراء وسيتم إزالة جميع البيانات المرتبطة بشكل دائم.",
+        "cancel": "إلغاء",
+        "deleteForever": "حذف نهائياً",
+        "deleting": "جاري الحذف..."
+      },
+      "form": {
+        "editCourse": "تعديل الكورس",
+        "createNewCourse": "إنشاء كورس جديد",
+        "editDesc": "تحديث تفاصيل وإعدادات الكورس",
+        "createDesc": "املأ تفاصيل الكورس الجديد الخاص بك",
+        "title": "عنوان الكورس",
+        "code": "كود الكورس",
+        "instructor": "اسم المحاضر",
+        "department": "القسم",
+        "semester": "الفصل الدراسي",
+        "credits": "الساعات المعتمدة",
+        "description": "الوصف",
+        "visibility": "حالة الظهور",
+        "visHidden": "مخفي (مسودة/تحضير)",
+        "visActive": "نشط (مرئي للطلاب)",
+        "visDisabled": "معطل (مؤرشف)",
+        "cancel": "إلغاء",
+        "save": "حفظ الكورس",
+        "saving": "جاري الحفظ...",
+        "titlePlaceholder": "مثال: حساب التفاضل والتكامل",
+        "codePlaceholder": "مثال: MATH101",
+        "instructorPlaceholder": "مثال: د. أحمد",
+        "departmentPlaceholder": "مثال: علوم الحاسب",
+        "semesterPlaceholder": "مثال: خريف 2026",
+        "descPlaceholder": "صف أهداف الكورس بإيجاز..."
+      },
+      "content": {
+        "title": "محتوى الكورس",
+        "materialsTab": "المرفقات والمصادر",
+        "examsTab": "الامتحانات المرتبطة",
+        "addNewMaterial": "إضافة مادة جديدة",
+        "publishedMaterials": "المرفقات المنشورة",
+        "courseExams": "امتحانات الكورس"
+      },
+      "stats": {
+        "title": "إحصائيات الكورس",
+        "students": "الطلاب",
+        "materials": "المرفقات",
+        "exams": "الامتحانات",
+        "avgScore": "متوسط الدرجات",
+        "latestResults": "أحدث نتائج الامتحانات",
+        "noSubmissions": "لم يتم العثور على تسليمات لهذا الكورس.",
+        "student": "الطالب",
+        "exam": "الامتحان",
+        "score": "الدرجة",
+        "performance": "الأداء",
+        "submitted": "تاريخ التسليم",
+        "perfAverage": "متوسط",
+        "perfHigh": "مرتفع",
+        "perfLow": "منخفض"
+      },
+      "enrollment": {
+        "title": "إدارة الطلاب",
+        "addStudents": "إضافة طلاب",
+        "individual": "فردي",
+        "bulkGroup": "مجموعة بالكامل",
+        "enrolledStudents": "الطلاب المسجلين"
+      },
+      "search": {
+        "searchLabel": "البحث بالاسم أو رقم الطالب",
+        "searchPlaceholder": "ابحث عن الطلاب...",
+        "unnamedStudent": "طالب غير مسمى",
+        "noStudentsFound": "لم يتم العثور على طلاب مطابقيين لـ"
+      },
+      "group": {
+        "levelLabel": "المستوى الأكاديمي",
+        "allLevels": "جميع المستويات",
+        "level": "مستوى",
+        "majorLabel": "التخصص",
+        "allMajors": "جميع التخصصات",
+        "enrollGroup": "تسجيل المجموعة",
+        "enrolling": "جاري التسجيل...",
+        "successEnrolled": "تم تسجليهم بنجاح",
+        "noNewStudents": "لم يتم العثور على طلاب جدد يطابقون هذه الفلاتر"
+      },
+      "enrolled": {
+        "noStudents": "لا يوجد طلاب مسجلين",
+        "noStudentsDesc": "ابحث عن الطلاب أعلاه أو قم بتسجيل مجموعة للبدء.",
+        "removeStudent": "إزالة الطالب",
+        "groupBadge": "مجموعة",
+        "unknownStudent": "طالب غير معروف"
+      },
+      "uploader": {
+        "fileUpload": "رفع ملف",
+        "externalLink": "رابط خارجي",
+        "title": "عنوان المادة",
+        "titlePlaceholder": "مثال: المحاضرة الأولى، المنهج...",
+        "url": "الرابط",
+        "attachFile": "إرفاق ملف (PDF، فيديو)",
+        "uploadInst": "انقر للرفع أو اسحب وأفلت",
+        "uploadLimit": "PDF أو فيديو بحجم أقصى 50 ميجابايت",
+        "uploadBtn": "رفع المادة",
+        "addLinkBtn": "إضافة رابط",
+        "uploading": "جاري الرفع..."
+      },
+      "materials": {
+        "noMaterials": "لا توجد مواد بعد",
+        "noMaterialsDesc": "قم برفع ملف PDF أو فيديو أو أضف رابطاً للبدء.",
+        "pendingReview": "قيد المراجعة",
+        "approved": "مقبول",
+        "rejected": "مرفوض",
+        "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذه المادة؟"
+      },
+      "examsList": {
+        "noExams": "لم يتم إنشاء امتحانات بعد",
+        "noExamsDesc": "انتقل إلى وحدة الامتحانات لإنشاء امتحان جديد لهذا الكورس.",
+        "upcoming": "قادم",
+        "live": "مباشر",
+        "finished": "منتهي",
+        "draft": "مسودة"
+      }
+    }
+  }
+}

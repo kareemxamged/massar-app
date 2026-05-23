@@ -1,0 +1,102 @@
+{
+  "page": {
+    "title": "My Profile",
+    "subtitle": "Manage your account information and preferences"
+  },
+  "tabs": {
+    "personal": "Personal Info",
+    "security": "Security",
+    "preferences": "Preferences",
+    "academic": "Academic",
+    "professional": "Professional",
+    "rolePermissions": "Role & Permissions"
+  },
+  "header": {
+    "joined": "Joined",
+    "online": "Online",
+    "changePhoto": "Change",
+    "uploading": "Uploading…",
+    "removePhoto": "Remove Photo"
+  },
+  "personal": {
+    "title": "Personal Information",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "dateOfBirth": "Date of Birth",
+    "saveChanges": "Save Changes",
+    "saving": "Saving…",
+    "emailNote": "Email cannot be changed here",
+    "studentId": "Student ID"
+  },
+  "security": {
+    "title": "Security Settings",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm New Password",
+    "updatePassword": "Update Password",
+    "updating": "Updating…",
+    "memberSince": "Member Since",
+    "lastLogin": "Last Login",
+    "twoFactor": "Two-Factor Authentication",
+    "twoFactorDesc": "Add an extra layer of security",
+    "enable2FA": "Enable 2FA",
+    "accountSecurity": "Account Security"
+  },
+  "academic": {
+    "title": "Academic Information",
+    "major": "Major / Specialty",
+    "level": "Academic Level",
+    "studentCode": "Student Code",
+    "gpa": "GPA",
+    "enrolledCourses": "Enrolled Courses",
+    "completedExams": "Completed Exams"
+  },
+  "professional": {
+    "title": "Professional Information",
+    "bio": "Biography",
+    "specialization": "Specialization",
+    "department": "Department",
+    "headline": "Headline",
+    "academicDegree": "Academic Degree",
+    "yearsExperience": "Years of Experience",
+    "employeeCode": "Employee Code",
+    "coursesTitle": "My Courses",
+    "coursesSubtitle": "Courses you are currently teaching",
+    "noCourses": "No courses assigned yet",
+    "studentsEnrolled": "students"
+  },
+  "rolePermissions": {
+    "title": "Role & Permissions",
+    "systemRole": "System Role",
+    "accountStatus": "Account Status",
+    "active": "Active",
+    "suspended": "Suspended",
+    "permissions": "Permissions",
+    "canManageUsers": "Manage Users",
+    "canManageExams": "Manage Exams",
+    "canManageCourses": "Manage Courses",
+    "canViewReports": "View Reports",
+    "canManageSettings": "Manage System Settings",
+    "fullAccess": "Full administrative access to all system features"
+  },
+  "preferences": {
+    "title": "Preferences",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "english": "English",
+    "arabic": "Arabic (العربية)"
+  },
+  "toast": {
+    "saveSuccess": "Profile updated successfully",
+    "saveError": "Failed to update profile",
+    "avatarSuccess": "Avatar updated",
+    "avatarError": "Failed to upload avatar",
+    "avatarRemoved": "Avatar removed",
+    "passwordSuccess": "Password updated successfully",
+    "passwordError": "Failed to update password",
+    "passwordMismatch": "Passwords do not match"
+  }
+}

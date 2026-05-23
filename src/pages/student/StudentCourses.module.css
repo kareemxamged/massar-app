@@ -1,0 +1,701 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.title svg {
+    width: 32px;
+    height: 32px;
+    color: var(--primary);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin: 0.5rem 0 0 0;
+}
+
+.registerBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(to right, #8b5cf6, #6366f1);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(139, 92, 246, 0.39);
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.registerBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+.filtersBar {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+.searchWrapper {
+    flex: 1 1 300px;
+    position: relative;
+    min-width: 0;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.85rem 1rem 0.85rem 3rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.searchInput:focus {
+    border-color: var(--primary);
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+    display: flex;
+}
+
+.filtersGroup {
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.dropdownWrapper {
+    position: relative;
+    flex: 1 1 200px;
+    min-width: 0;
+}
+
+.dropdownSelect {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    padding-right: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    box-sizing: border-box;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.dropdownSelect:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.dropdownSelect option {
+    background: #1e293b;
+    color: white;
+}
+
+.dropdownIcon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+    display: flex;
+}
+
+.contentLayout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+    align-items: start;
+    min-width: 0;
+}
+
+.mainColumn {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.tabsRow {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    min-width: 0;
+}
+
+.tabsRow::-webkit-scrollbar {
+    display: none;
+}
+
+.tabBtn {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: capitalize;
+    white-space: nowrap;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.tabBtn:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.activeTab {
+    color: white;
+    font-weight: bold;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: 8px 8px 0 0;
+}
+
+.activeTab::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #8b5cf6, #6366f1);
+}
+
+.courseCard {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.courseCard:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.courseInfo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.courseIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.courseTitle {
+    margin: 0;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.courseMeta {
+    margin: 4px 0 0 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.courseCode {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.viewBtn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.viewBtn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.detailsGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.detailColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.detailSection {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.detailSectionTitle {
+    color: white;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailLabel {
+    color: var(--text-muted);
+}
+
+.detailValue {
+    color: white;
+    font-weight: 500;
+}
+
+.detailValueGreen {
+    color: #10b981;
+    font-weight: bold;
+}
+
+.progressBar {
+    height: 6px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(to right, #8b5cf6, #6366f1);
+    border-radius: 3px;
+    transition: width 1s ease-in-out;
+}
+
+.progressLabel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.progressLabelText {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.progressLabelValue {
+    font-size: 0.85rem;
+    color: white;
+    font-weight: bold;
+}
+
+.upcomingBox {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.upcomingTitle {
+    color: white;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.upcomingItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.upcomingDate {
+    color: #f59e0b;
+    font-size: 0.8rem;
+}
+
+.actionsFooter {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.actionBtn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.actionBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar {
+    position: sticky;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
+}
+
+.statsCard {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.statsTitle {
+    margin: 0 0 1.25rem 0;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.statRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.statLabel {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.statValue {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.statValueGreen {
+    font-weight: bold;
+    color: #10b981;
+    font-size: 1.1rem;
+}
+
+.statValueSmall {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.degreeProgressBox {
+    margin-top: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.degreeProgressHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.degreeProgressLabel {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.degreeProgressValue {
+    font-size: 0.9rem;
+    color: #8b5cf6;
+    font-weight: bold;
+}
+
+.degreeProgressBar {
+    height: 8px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.degreeProgressFill {
+    height: 100%;
+    width: 66%;
+    background: linear-gradient(to right, #8b5cf6, #6366f1);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+}
+
+.courseList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+/* Responsive: Mobile (< 640px) */
+@media (max-width: 639px) {
+    .container {
+        padding: 0 0.75rem 2rem 0.75rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .title svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .registerBtn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .filtersBar {
+        padding: 0.75rem;
+    }
+
+    .searchWrapper {
+        flex: 1 1 100%;
+    }
+
+    .filtersGroup {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dropdownWrapper {
+        flex: 1 1 100%;
+    }
+
+    .contentLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .tabsRow {
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .tabBtn {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .detailsGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .actionsFooter {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .courseCard {
+        padding: 1rem;
+    }
+
+    .cardHeader {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .viewBtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .courseInfo {
+        flex-wrap: wrap;
+    }
+
+    .courseIcon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .courseTitle {
+        font-size: 1.1rem;
+    }
+
+    .actionsFooter {
+        gap: 0.75rem;
+    }
+
+    .actionBtn {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive: Tablet (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .contentLayout {
+        grid-template-columns: 1fr 260px;
+        gap: 1.5rem;
+    }
+
+    .detailsGrid {
+        gap: 1.5rem;
+    }
+
+    .actionsFooter {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+
+    .actionBtn {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .tabBtn {
+        font-size: 0.85rem;
+    }
+
+    .filtersBar {
+        padding: 0.75rem;
+    }
+}
+
+/* Responsive: Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+}

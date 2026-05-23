@@ -1,0 +1,88 @@
+{
+  "page": {
+    "title": "System Settings",
+    "subtitle": "Configure branding, maintenance, features and announcements"
+  },
+  "tabs": {
+    "general": "General",
+    "maintenance": "Maintenance",
+    "features": "Feature Toggles",
+    "broadcast": "Broadcast",
+    "academic": "Academic Config",
+    "status": "Platform Status"
+  },
+  "general": {
+    "branding": "Branding",
+    "siteLogo": "Site Logo",
+    "logoHint": "PNG, JPG, SVG — max 2 MB",
+    "uploadLogo": "Upload Logo",
+    "siteName": "Site Name",
+    "faviconUrl": "Favicon URL",
+    "faviconPlaceholder": "https://example.com/favicon.ico",
+    "contact": "Contact Information",
+    "contactEmail": "Contact Email",
+    "contactEmailPlaceholder": "admin@example.com",
+    "supportPhone": "Support Phone",
+    "supportPhonePlaceholder": "+1 (555) 000-0000",
+    "socialLinks": "Social Links",
+    "saveChanges": "Save Changes",
+    "saving": "Saving…",
+    "uploading": "Uploading…",
+    "logoError": "Image must be under 2 MB"
+  },
+  "maintenance": {
+    "title": "Maintenance Mode",
+    "description": "When enabled, non-admin users see a maintenance screen instead of the application",
+    "toggle": "Enable Maintenance Mode",
+    "message": "Maintenance Message",
+    "messagePlaceholder": "The system is under maintenance. Please check back later.",
+    "saveChanges": "Save Changes",
+    "saving": "Saving…",
+    "warningTitle": "Warning",
+    "warningBody": "Enabling maintenance mode will log out all non-admin users immediately."
+  },
+  "features": {
+    "title": "Feature Toggles",
+    "studentChat": "Enable Student Chat",
+    "studentChatDesc": "Allow students to send messages to each other and teachers",
+    "showResultsImmediately": "Show Exam Results Immediately",
+    "showResultsDesc": "Students see their score and results right after submission",
+    "saveChanges": "Save Changes",
+    "saving": "Saving…"
+  },
+  "broadcast": {
+    "title": "Broadcast Message",
+    "description": "Display a system-wide announcement banner to all users",
+    "messagePlaceholder": "Enter your announcement…",
+    "clearMessage": "Clear Message",
+    "saveChanges": "Save Changes",
+    "saving": "Saving…",
+    "activeLabel": "Active broadcast"
+  },
+  "toast": {
+    "saveSuccess": "Settings saved successfully",
+    "saveError": "Failed to save settings",
+    "logoError": "Logo upload failed",
+    "academicSaveSuccess": "Academic config saved"
+  },
+  "academic": {
+    "title": "Academic Configuration",
+    "levelsTitle": "Academic Levels",
+    "addLevel": "Add Level",
+    "majorsTitle": "Majors / Specialties",
+    "addMajor": "Add Major",
+    "name": "Name",
+    "code": "Code",
+    "order": "Order",
+    "description": "Description",
+    "action": "Action",
+    "emptyLevels": "No academic levels found.",
+    "emptyMajors": "No majors registered."
+  },
+  "status": {
+    "title": "Platform Status",
+    "allowRegistration": "Allow Student Registration",
+    "allowRegistrationDesc": "Enable or disable new student signups on the platform.",
+    "saveChanges": "Save Platform Status"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ai-question-generator",
+  "version": "2.1.0",
+  "description": "RAG-Powered AI Question Generator with Vector Search",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false
+  },
+  "imports": {
+    "@supabase/functions-js": "https://esm.sh/@supabase/functions-js@2.4.4",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2"
+  }
+}

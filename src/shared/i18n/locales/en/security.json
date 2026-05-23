@@ -1,0 +1,98 @@
+{
+  "page": {
+    "title":      "Security & Audit Logs",
+    "subtitle":   "Track user activity, sensitive actions, and system changes",
+    "refreshAll": "Refresh All"
+  },
+  "tabs": {
+    "logs":     "Activity Log",
+    "sessions": "Admin Sessions"
+  },
+  "stats": {
+    "totalToday":     "Total Events Today",
+    "sensitive24h":   "Sensitive Actions (24h)",
+    "deletions24h":   "Deletions (24h)",
+    "roleChanges24h": "Role / Status Changes (24h)"
+  },
+  "filters": {
+    "searchPlaceholder": "Filter by admin name...",
+    "allActions":        "All Actions",
+    "apply":             "Apply",
+    "clear":             "Clear",
+    "refresh":           "Refresh",
+    "dateArrow":         "→"
+  },
+  "table": {
+    "timestamp":     "Timestamp",
+    "admin":         "Admin",
+    "action":        "Action",
+    "entity":        "Entity",
+    "entityId":      "Entity ID",
+    "changes":       "Changes",
+    "systemTrigger": "System / Trigger",
+    "viewChanges":   "View",
+    "noEvents":      "No audit events match the current filters."
+  },
+  "summary": {
+    "events_one":   "{{count}} event",
+    "events_other": "{{count}} events",
+    "page":         "page {{current}} of {{total}}",
+    "filtered":     "(filtered)",
+    "showing":      "Showing {{from}}–{{to}} of {{total}}"
+  },
+  "sessions": {
+    "title":         "Admin Sessions",
+    "admin_one":     "{{count}} admin",
+    "admin_other":   "{{count}} admins",
+    "refresh":       "Refresh",
+    "noAdmins":      "No admin accounts found.",
+    "lastActive":    "Last active: {{time}}",
+    "actionsToday":  "actions today",
+    "justNow":       "just now",
+    "minutesAgo":    "{{m}}m ago",
+    "hoursAgo":      "{{h}}h ago",
+    "daysAgo":       "{{d}}d ago"
+  },
+  "diff": {
+    "fieldsInserted_one":   "{{count}} field inserted",
+    "fieldsInserted_other": "{{count}} fields inserted",
+    "fieldsDeleted_one":    "{{count}} field deleted",
+    "fieldsDeleted_other":  "{{count}} fields deleted",
+    "fieldsChanged":        "@@ {{count}} fields @@",
+    "unchanged_one":        "{{count}} unchanged field",
+    "unchanged_other":      "{{count}} unchanged fields",
+    "noChanges":            "No field differences detected.",
+    "close":                "Close"
+  },
+  "toast": {
+    "refreshed":     "Data refreshed",
+    "refreshFailed": "Refresh failed"
+  },
+  "actions": {
+    "login":            "Login",
+    "logout":           "Logout",
+    "create_course":    "Create Course",
+    "update_course":    "Update Course",
+    "delete_course":    "Delete Course",
+    "approve_course":   "Approve Course",
+    "reject_course":    "Reject Course",
+    "create_exam":      "Create Exam",
+    "update_exam":      "Update Exam",
+    "delete_exam":      "Delete Exam",
+    "approve_exam":     "Approve Exam",
+    "reject_exam":      "Reject Exam",
+    "create_material":  "Create Material",
+    "update_material":  "Update Material",
+    "delete_material":  "Delete Material",
+    "approve_material": "Approve Material",
+    "reject_material":  "Reject Material",
+    "create_user":      "Create User",
+    "update_user":      "Update User",
+    "delete_user":      "Delete User",
+    "change_role":      "Change Role",
+    "suspend_user":     "Suspend User",
+    "update_settings":  "Update Settings",
+    "enroll_student":   "Enroll Student",
+    "unenroll_student": "Unenroll Student"
+  }
+}

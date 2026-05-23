@@ -1,0 +1,102 @@
+{
+  "page": {
+    "title": "ملفي الشخصي",
+    "subtitle": "إدارة معلومات حسابك وتفضيلاتك"
+  },
+  "tabs": {
+    "personal": "المعلومات الشخصية",
+    "security": "الأمان",
+    "preferences": "التفضيلات",
+    "academic": "الأكاديمي",
+    "professional": "المهني",
+    "rolePermissions": "الدور والصلاحيات"
+  },
+  "header": {
+    "joined": "انضم",
+    "online": "متصل",
+    "changePhoto": "تغيير",
+    "uploading": "جارٍ الرفع…",
+    "removePhoto": "إزالة الصورة"
+  },
+  "personal": {
+    "title": "المعلومات الشخصية",
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "dateOfBirth": "تاريخ الميلاد",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جارٍ الحفظ…",
+    "emailNote": "لا يمكن تغيير البريد الإلكتروني هنا",
+    "studentId": "رقم الطالب"
+  },
+  "security": {
+    "title": "إعدادات الأمان",
+    "changePassword": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور الجديدة",
+    "updatePassword": "تحديث كلمة المرور",
+    "updating": "جارٍ التحديث…",
+    "memberSince": "عضو منذ",
+    "lastLogin": "آخر دخول",
+    "twoFactor": "التحقق بخطوتين",
+    "twoFactorDesc": "إضافة طبقة أمان إضافية",
+    "enable2FA": "تفعيل 2FA",
+    "accountSecurity": "أمان الحساب"
+  },
+  "academic": {
+    "title": "المعلومات الأكاديمية",
+    "major": "التخصص",
+    "level": "المستوى الأكاديمي",
+    "studentCode": "رقم الطالب",
+    "gpa": "المعدل التراكمي",
+    "enrolledCourses": "المواد المسجلة",
+    "completedExams": "الاختبارات المكتملة"
+  },
+  "professional": {
+    "title": "المعلومات المهنية",
+    "bio": "السيرة الذاتية",
+    "specialization": "التخصص",
+    "department": "القسم",
+    "headline": "العنوان الوظيفي",
+    "academicDegree": "الدرجة العلمية",
+    "yearsExperience": "سنوات الخبرة",
+    "employeeCode": "رقم الموظف",
+    "coursesTitle": "مواد التدريس",
+    "coursesSubtitle": "المواد التي تدرّسها حالياً",
+    "noCourses": "لم تُسنَد إليك أي مواد بعد",
+    "studentsEnrolled": "طالب"
+  },
+  "rolePermissions": {
+    "title": "الدور والصلاحيات",
+    "systemRole": "الدور في النظام",
+    "accountStatus": "حالة الحساب",
+    "active": "نشط",
+    "suspended": "موقوف",
+    "permissions": "الصلاحيات",
+    "canManageUsers": "إدارة المستخدمين",
+    "canManageExams": "إدارة الاختبارات",
+    "canManageCourses": "إدارة المقررات",
+    "canViewReports": "عرض التقارير",
+    "canManageSettings": "إدارة إعدادات النظام",
+    "fullAccess": "وصول إداري كامل لجميع ميزات النظام"
+  },
+  "preferences": {
+    "title": "التفضيلات",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "notifications": "الإشعارات",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "toast": {
+    "saveSuccess": "تم تحديث الملف الشخصي بنجاح",
+    "saveError": "فشل تحديث الملف الشخصي",
+    "avatarSuccess": "تم تحديث الصورة الشخصية",
+    "avatarError": "فشل رفع الصورة",
+    "avatarRemoved": "تمت إزالة الصورة",
+    "passwordSuccess": "تم تحديث كلمة المرور بنجاح",
+    "passwordError": "فشل تحديث كلمة المرور",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "manageExams": {
+    "title": "إدارة الامتحانات",
+    "subtitle": "تحكم في الظهور، وعشوائية الأسئلة، وإدارة تقييماتك.",
+    "createBtn": "إنشاء امتحان جديد",
+    "searchPlaceholder": "ابحث بعنوان الامتحان أو المادة...",
+    "sortNewest": "الأحدث أولاً",
+    "sortOldest": "الأقدم أولاً",
+    "loading": "جارٍ تحميل الامتحانات...",
+    "noExams": "لا توجد امتحانات",
+    "noExamsHint": "جرّب تعديل الفلاتر أو أنشئ امتحاناً جديداً.",
+    "evergreen": "متاح دائماً",
+    "awaitingApproval": "في انتظار موافقة المشرف",
+    "editOnlyUpcoming": "يمكن تعديل الامتحانات القادمة فقط.",
+    "statusFilter": {
+      "All": "جميع الحالات",
+      "Always Available": "متاح دائماً",
+      "Active": "نشط",
+      "Upcoming": "قادم",
+      "Disabled": "معطل",
+      "Expired": "منتهي"
+    },
+    "table": {
+      "examDetails": "تفاصيل الامتحان",
+      "schedule": "الجدول الزمني",
+      "metrics": "الإحصائيات",
+      "settings": "الإعدادات",
+      "actions": "الإجراءات",
+      "questions": "سؤال",
+      "points": "درجة",
+      "mins": "دقيقة"
+    },
+    "status": {
+      "AlwaysAvailable": "متاح دائماً",
+      "Active": "نشط",
+      "Upcoming": "قادم",
+      "Expired": "منتهي",
+      "Disabled": "معطل"
+    },
+    "approval": {
+      "approved": "معتمد",
+      "rejected": "مرفوض",
+      "pending": "قيد المراجعة"
+    },
+    "rejectionReason": "سبب الرفض",
+    "toggles": {
+      "published": "منشور",
+      "shuffleQs": "ترتيب عشوائي"
+    },
+    "actions": {
+      "edit": "تعديل الامتحان",
+      "delete": "حذف",
+      "duplicate": "نسخ",
+      "submissions": "الإجابات",
+      "quickView": "عرض سريع"
+    },
+    "stats": {
+      "submissions": "عدد الإجابات",
+      "totalQuestions": "عدد الأسئلة",
+      "linkedCourse": "المادة"
+    },
+    "deleteModal": {
+      "title": "حذف الامتحان؟",
+      "messagePre": "هل أنت متأكد من حذف",
+      "messagePost": "؟ لا يمكن التراجع عن هذا الإجراء وقد يؤدي إلى حذف إجابات الطلاب المرتبطة.",
+      "confirm": "نعم، احذف الامتحان",
+      "cancel": "إلغاء"
+    },
+    "duplicateModal": {
+      "title": "نسخ الامتحان؟",
+      "messagePre": "هل أنت متأكد من إنشاء نسخة من",
+      "messagePost": "؟ سيتم نسخ الأسئلة والإعدادات كامتحان جديد بحالة \"قادم\".",
+      "confirm": "نعم، انسخ",
+      "cancel": "إلغاء"
+    }
+  },
+  "editExamModal": {
+    "title": "تعديل الامتحان",
+    "subtitle": "عدّل الأسئلة والإعدادات والجدول الزمني",
+    "loading": "جارٍ تحميل بيانات الامتحان للتعديل...",
+    "steps": {
+      "examInfo": "معلومات الامتحان",
+      "questionBuilder": "بناء الأسئلة",
+      "settingsPublish": "الإعدادات والنشر"
+    },
+    "prevStep": "الخطوة السابقة",
+    "nextStep": "الخطوة التالية",
+    "saving": "جارٍ الحفظ...",
+    "completeEdit": "إتمام التعديل",
+    "toasts": {
+      "fixErrors": "يرجى تصحيح الأخطاء قبل المتابعة.",
+      "updateSuccess": "تم تحديث الامتحان بنجاح!",
+      "loadFailed": "فشل في فتح محرر الامتحان.",
+      "saveFailed": "فشل في حفظ التغييرات."
+    },
+    "form": {
+      "step1": {
+        "title": "المعلومات الأساسية",
+        "examTitle": "عنوان الامتحان *",
+        "examTitlePlaceholder": "مثال: امتحان الرياضيات النصفي",
+        "subjectArea": "المادة الدراسية *",
+        "subjectPlaceholder": "مثال: رياضيات، علوم",
+        "linkToCourse": "ربط بالدورة التدريبية *",
+        "standaloneExam": "-- امتحان مستقل --",
+        "description": "الوصف والتعليمات",
+        "descriptionPlaceholder": "قدم تعليمات للطلاب..."
+      },
+      "step2": {
+        "title": "بناء الأسئلة",
+        "subtitle": "أضف وقم بتكوين الأسئلة لامتحانك",
+        "fromBank": "من البنك",
+        "aiGenerate": "توليد AI",
+        "noQuestionsTitle": "لا توجد أسئلة بعد",
+        "noQuestionsHint": "ابدأ في بناء امتحانك بإضافة سؤالك الأول يدوياً.",
+        "addManually": "+ إضافة يدوية",
+        "importFromBank": "استيراد من البنك",
+        "aiDefaults": "افتراضيات AI",
+        "addAnother": "إضافة سؤال آخر"
+      },
+      "step3": {
+        "title": "إعدادات الامتحان",
+        "subtitle": "تكوين الحدود الزمنية ومتطلبات النجاح والسلوك.",
+        "timingSection": "التوقيت والجدولة",
+        "startTime": "وقت البدء *",
+        "startTimeHint": "متى يمكن للطلاب بدء الامتحان.",
+        "endTime": "وقت الانتهاء / الموعد النهائي *",
+        "endTimeHint": "ينتهي الامتحان إجبارياً هنا بغض النظر عن مدة الطالب.",
+        "duration": "المدة (بالدقائق) *",
+        "gradingSection": "التصحيح والأمان",
+        "passingScore": "درجة النجاح (%) *",
+        "passingScoreHint": "النسبة المئوية الدنيا المطلوبة للنجاح."
+      }
+    }
+  },
+  "submissionsModal": {
+    "submissions": "إجابة",
+    "avgScore": "متوسط الدرجات",
+    "exportExcel": "تصدير Excel",
+    "closeModal": "إغلاق النافذة",
+    "loading": "جارٍ تحميل الإجابات...",
+    "errorTitle": "خطأ في تحميل الإجابات",
+    "tryAgain": "حاول مجدداً",
+    "noSubmissions": "لا توجد إجابات بعد",
+    "noSubmissionsHint": "عندما يؤدي الطلاب هذا الامتحان، ستظهر نتائجهم هنا.",
+    "table": {
+      "student": "الطالب",
+      "startedAt": "وقت البدء",
+      "status": "الحالة",
+      "score": "الدرجة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "graded": "مقيّم",
+      "inProgress": "جارٍ",
+      "pending": "قيد الانتظار"
+    },
+    "clickToView": "انقر لعرض ملف الطالب",
+    "studentIdPrefix": "رقم",
+    "profileBtn": "الملف",
+    "reviewBtn": "مراجعة",
+    "exported": "تم تصدير {{count}} درجة طالب",
+    "noGraded": "لا توجد إجابات مقيّمة للتصدير"
+  }
+}

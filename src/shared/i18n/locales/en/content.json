@@ -1,0 +1,155 @@
+{
+  "page": {
+    "title": "Content Oversight",
+    "subtitle": "Manage course approvals, category taxonomy, and content reports",
+    "refresh": "Refresh",
+    "refreshTitle": "Refresh current tab"
+  },
+  "tabs": {
+    "approvals":  "Course Approvals",
+    "exams":      "Exam Approvals",
+    "materials":  "Material Approvals",
+    "categories": "Taxonomy",
+    "reports":    "Reports Inbox"
+  },
+  "pending": {
+    "courses_one":        "{{count}} course pending",
+    "courses_other":      "{{count}} courses pending",
+    "exams_one":          "{{count}} exam pending",
+    "exams_other":        "{{count}} exams pending",
+    "materials_one":      "{{count}} material pending",
+    "materials_other":    "{{count}} materials pending",
+    "openReports_one":    "{{count}} open report",
+    "openReports_other":  "{{count}} open reports"
+  },
+  "status": {
+    "pending":       "Pending",
+    "approved":      "Approved",
+    "rejected":      "Rejected",
+    "pendingReview": "Pending Review",
+    "open":          "Open",
+    "resolved":      "Resolved"
+  },
+  "filter": {
+    "allStatuses": "All Statuses",
+    "allReports":  "All Reports"
+  },
+  "actions": {
+    "review":          "Review",
+    "approve":         "Approve",
+    "reject":          "Reject",
+    "reReview":        "Re-Review",
+    "resolve":         "Resolve",
+    "cancel":          "Cancel",
+    "saving":          "Saving…",
+    "filing":          "Filing…",
+    "fileReport":      "File Report",
+    "fileReportTitle": "File a report about this course",
+    "add":             "Add",
+    "delete":          "Delete",
+    "deleting":        "Deleting…",
+    "edit":            "Edit"
+  },
+  "table": {
+    "course":     "Course",
+    "teacher":    "Teacher",
+    "content":    "Content",
+    "submitted":  "Submitted",
+    "status":     "Status",
+    "reviewedBy": "Reviewed By",
+    "exam":       "Exam",
+    "course_col": "Course",
+    "questions":  "Questions",
+    "material":   "Material",
+    "type":       "Type"
+  },
+  "counts": {
+    "materials_one":      "{{count}} material",
+    "materials_other":    "{{count}} materials",
+    "exams_one":          "{{count}} exam",
+    "exams_other":        "{{count}} exams",
+    "courseQueue_one":    "Course Queue — {{count}} course",
+    "courseQueue_other":  "Course Queue — {{count}} courses",
+    "examQueue_one":      "Exam Queue — {{count}} exam",
+    "examQueue_other":    "Exam Queue — {{count}} exams",
+    "materialQueue_one":  "Material Queue — {{count}} item",
+    "materialQueue_other":"Material Queue — {{count}} items",
+    "reportsTitle":       "Content Reports — {{count}} total"
+  },
+  "empty": {
+    "courses":   "No courses match this filter.",
+    "exams":     "No exams match this filter.",
+    "materials": "No materials match this filter.",
+    "reports":   "No reports match this filter."
+  },
+  "review": {
+    "examSummary": "{{questions}} Qs · {{duration}}min",
+    "notesLabel":              "Review Notes",
+    "notesRequired":           "(required to reject)",
+    "notesPlaceholder":        "Add feedback or rejection reason...",
+    "rejectionRequired":       "A rejection reason is required.",
+    "rejectionRequiredCourse": "A rejection reason is required before rejecting a course.",
+    "alreadyDecided":          "Already {{status}}. Override below if needed.",
+    "alreadyDecidedCourse":    "This course is already {{status}}. You can override the decision below.",
+    "approvedLabel":           "Approved",
+    "rejectedLabel":           "Rejected",
+    "reviewedBy":              " by ",
+    "noCourse":                "No course",
+    "meta": {
+      "teacher":    "Teacher",
+      "course":     "Course",
+      "questions":  "Questions",
+      "duration":   "Duration",
+      "submitted":  "Submitted",
+      "department": "Department",
+      "credits":    "Credits"
+    },
+    "noMaterials":      "No materials uploaded.",
+    "noExams":          "No exams created.",
+    "description":      "Description",
+    "materialsSection": "Materials",
+    "examsSection":     "Exams",
+    "report": {
+      "sectionTitle": "File a Report",
+      "placeholder":  "Describe the issue (min 20 characters)...",
+      "minChars":     "Please provide at least 20 characters.",
+      "failed":       "Failed to submit report."
+    }
+  },
+  "taxonomy": {
+    "specialties": {
+      "title":        "Specialties",
+      "subtitle":     "Course specialization categories",
+      "empty":        "No specialties yet. Add one above.",
+      "saveFailed":   "Save failed. Name may already exist.",
+      "updateFailed": "Update failed."
+    },
+    "levels": {
+      "title":        "Academic Levels",
+      "subtitle":     "Student level classifications",
+      "empty":        "No levels yet. Add one above.",
+      "saveFailed":   "Save failed. Name may already exist.",
+      "updateFailed": "Update failed.",
+      "orderBadge":   "Order {{n}}"
+    },
+    "fields": {
+      "nameLabel":         "Name *",
+      "codeLabel":         "Code",
+      "orderLabel":        "Display Order",
+      "nameRequired":      "Name is required",
+      "specialtyNamePh":   "e.g. Software Engineering",
+      "specialtyCodePh":   "e.g. SE",
+      "levelNamePh":       "e.g. Year 3",
+      "levelCodePh":       "e.g. L3",
+      "levelOrderPh":      "e.g. 3"
+    },
+    "delete": {
+      "title":            "Delete \"{{name}}\"?",
+      "messageSpecialty": "This specialty will be permanently deleted.",
+      "messageLevel":     "This academic level will be permanently deleted."
+    }
+  },
+  "reports": {
+    "unknownUser": "Unknown user"
+  }
+}

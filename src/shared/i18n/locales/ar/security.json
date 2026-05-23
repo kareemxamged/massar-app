@@ -1,0 +1,118 @@
+{
+  "page": {
+    "title":      "الأمان وسجلات التدقيق",
+    "subtitle":   "تتبع نشاط المستخدمين والإجراءات الحساسة وتغييرات النظام",
+    "refreshAll": "تحديث الكل"
+  },
+  "tabs": {
+    "logs":     "سجل النشاط",
+    "sessions": "جلسات المشرفين"
+  },
+  "stats": {
+    "totalToday":     "إجمالي الأحداث اليوم",
+    "sensitive24h":   "الإجراءات الحساسة (24 ساعة)",
+    "deletions24h":   "عمليات الحذف (24 ساعة)",
+    "roleChanges24h": "تغييرات الأدوار والحالات (24 ساعة)"
+  },
+  "filters": {
+    "searchPlaceholder": "تصفية باسم المشرف...",
+    "allActions":        "كل الإجراءات",
+    "apply":             "تطبيق",
+    "clear":             "مسح",
+    "refresh":           "تحديث",
+    "dateArrow":         "←"
+  },
+  "table": {
+    "timestamp":     "التوقيت",
+    "admin":         "المشرف",
+    "action":        "الإجراء",
+    "entity":        "الكيان",
+    "entityId":      "معرّف الكيان",
+    "changes":       "التغييرات",
+    "systemTrigger": "النظام / مشغِّل",
+    "viewChanges":   "عرض",
+    "noEvents":      "لا توجد أحداث تدقيق تطابق الفلاتر الحالية."
+  },
+  "summary": {
+    "events_zero":  "{{count}} أحداث",
+    "events_one":   "{{count}} حدث",
+    "events_two":   "{{count}} أحداث",
+    "events_few":   "{{count}} أحداث",
+    "events_many":  "{{count}} أحداث",
+    "events_other": "{{count}} أحداث",
+    "page":         "صفحة {{current}} من {{total}}",
+    "filtered":     "(مُصفَّى)",
+    "showing":      "عرض {{from}}–{{to}} من {{total}}"
+  },
+  "sessions": {
+    "title":          "جلسات المشرفين",
+    "admin_zero":     "{{count}} مشرفين",
+    "admin_one":      "{{count}} مشرف",
+    "admin_two":      "{{count}} مشرفين",
+    "admin_few":      "{{count}} مشرفين",
+    "admin_many":     "{{count}} مشرفين",
+    "admin_other":    "{{count}} مشرفين",
+    "refresh":        "تحديث",
+    "noAdmins":       "لا توجد حسابات مشرفين.",
+    "lastActive":     "آخر نشاط: {{time}}",
+    "actionsToday":   "إجراء اليوم",
+    "justNow":        "الآن",
+    "minutesAgo":     "منذ {{m}} د",
+    "hoursAgo":       "منذ {{h}} س",
+    "daysAgo":        "منذ {{d}} ي"
+  },
+  "diff": {
+    "fieldsInserted_zero":  "{{count}} حقول مُدرَجة",
+    "fieldsInserted_one":   "{{count}} حقل مُدرَج",
+    "fieldsInserted_two":   "{{count}} حقول مُدرَجة",
+    "fieldsInserted_few":   "{{count}} حقول مُدرَجة",
+    "fieldsInserted_many":  "{{count}} حقول مُدرَجة",
+    "fieldsInserted_other": "{{count}} حقول مُدرَجة",
+    "fieldsDeleted_zero":   "{{count}} حقول محذوفة",
+    "fieldsDeleted_one":    "{{count}} حقل محذوف",
+    "fieldsDeleted_two":    "{{count}} حقول محذوفة",
+    "fieldsDeleted_few":    "{{count}} حقول محذوفة",
+    "fieldsDeleted_many":   "{{count}} حقول محذوفة",
+    "fieldsDeleted_other":  "{{count}} حقول محذوفة",
+    "fieldsChanged":        "@@ {{count}} حقل @@",
+    "unchanged_zero":       "{{count}} حقول غير مُغيَّرة",
+    "unchanged_one":        "{{count}} حقل غير مُغيَّر",
+    "unchanged_two":        "{{count}} حقول غير مُغيَّرة",
+    "unchanged_few":        "{{count}} حقول غير مُغيَّرة",
+    "unchanged_many":       "{{count}} حقول غير مُغيَّرة",
+    "unchanged_other":      "{{count}} حقول غير مُغيَّرة",
+    "noChanges": "لم يتم اكتشاف أي فروق في الحقول.",
+    "close":     "إغلاق"
+  },
+  "toast": {
+    "refreshed":     "تم تحديث البيانات",
+    "refreshFailed": "فشل التحديث"
+  },
+  "actions": {
+    "login":            "تسجيل دخول",
+    "logout":           "تسجيل خروج",
+    "create_course":    "إنشاء مقرر",
+    "update_course":    "تحديث مقرر",
+    "delete_course":    "حذف مقرر",
+    "approve_course":   "قبول مقرر",
+    "reject_course":    "رفض مقرر",
+    "create_exam":      "إنشاء اختبار",
+    "update_exam":      "تحديث اختبار",
+    "delete_exam":      "حذف اختبار",
+    "approve_exam":     "قبول اختبار",
+    "reject_exam":      "رفض اختبار",
+    "create_material":  "إنشاء مادة",
+    "update_material":  "تحديث مادة",
+    "delete_material":  "حذف مادة",
+    "approve_material": "قبول مادة",
+    "reject_material":  "رفض مادة",
+    "create_user":      "إنشاء مستخدم",
+    "update_user":      "تحديث مستخدم",
+    "delete_user":      "حذف مستخدم",
+    "change_role":      "تغيير الدور",
+    "suspend_user":     "تعليق مستخدم",
+    "update_settings":  "تحديث الإعدادات",
+    "enroll_student":   "تسجيل طالب",
+    "unenroll_student": "إلغاء تسجيل طالب"
+  }
+}

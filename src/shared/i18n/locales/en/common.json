@@ -1,0 +1,816 @@
+{
+  "portal": {
+    "student": "Student Portal",
+    "teacher": "Teacher Portal"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "myExams": "My Exams",
+    "myResults": "My Results",
+    "schedule": "Schedule",
+    "myCourses": "My Courses",
+    "manageCourses": "Manage Courses",
+    "manageExams": "Manage Exams",
+    "students": "Students",
+    "notifications": "Notifications",
+    "questionBank": "Question Bank",
+    "createExam": "Create Exam",
+    "teachers": "Teachers",
+    "content": "Content",
+    "security": "Security",
+    "settings": "Settings",
+    "myProfile": "My Profile",
+    "profile": "Profile",
+    "logout": "Logout",
+    "expandSidebar": "Expand Sidebar",
+    "collapseSidebar": "Collapse Sidebar",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu"
+  },
+  "examsLibrary": {
+    "title": "Exams Library",
+    "subtitle": "Browse and manage your upcoming and past exams.",
+    "searchPlaceholder": "Search for an exam...",
+    "filterStatuses": {
+      "all": "All",
+      "ongoing": "Ongoing Exams",
+      "upcoming": "Upcoming Exams",
+      "finished": "Finished Exams"
+    },
+    "emptyStateTitle": "No exams found in this section",
+    "emptyStateDesc": "When new exams are scheduled or activated, they will appear here directly. Check back later.",
+    "badges": {
+      "ongoing": "Active Now",
+      "upcoming": "Upcoming",
+      "finished": "Finished"
+    },
+    "buttons": {
+      "resume": "Resume",
+      "startNow": "Start Now",
+      "viewResult": "View Result",
+      "waiting": "Waiting for Schedule",
+      "details": "Details"
+    },
+    "minutes": "mins",
+    "questions": "Qs"
+  },
+  "examDetails": {
+    "loading": "Loading Details...",
+    "invalidLink": {
+      "title": "Invalid or Expired Link",
+      "description": "The exam you are looking for does not exist, or it has been temporarily unpublished by the instructor.",
+      "returnBtn": "Return to Dashboard"
+    },
+    "backToExams": "Back to Exams",
+    "meta": {
+      "tutor": "Tutor",
+      "date": "Date",
+      "duration": "Duration",
+      "alwaysAvailable": "Always Available",
+      "mins": "mins"
+    },
+    "sections": {
+      "description": "Description & Instructions",
+      "structure": "Exam Structure",
+      "topics": "Topics Covered",
+      "importantInstructions": "Important Instructions"
+    },
+    "structure": {
+      "totalQuestions": "Total Questions",
+      "totalMarks": "Total Marks",
+      "questions": "Questions",
+      "marks": "Marks"
+    },
+    "topics": {
+      "none": "No specific topics listed."
+    },
+    "instructions": {
+      "default1": "Ensure you have a stable internet connection.",
+      "default2": "Once started, the timer cannot be paused.",
+      "default3": "Don't refresh the page during the exam."
+    },
+    "actions": {
+      "availability": "Availability",
+      "startsIn": "Starts In",
+      "status": "Status",
+      "reviewResults": "Review Results",
+      "resumeExam": "Resume Exam",
+      "notStartedYet": "Not Started Yet",
+      "startExamNow": "Start Exam Now",
+      "sessionProtected": "Session Protected"
+    },
+    "modal": {
+      "title": "Ready to begin?",
+      "check1": "Stable internet connection",
+      "check2": "Distraction-free environment",
+      "check3": "Enough time allocated ({{min}} mins)",
+      "warning": "You cannot pause or restart once you begin.",
+      "cancel": "Cancel",
+      "confirm": "Yes, Start Exam"
+    }
+  },
+  "examEngine": {
+    "alerts": {
+      "unpublished": "The instructor has unpublished this exam. Your session has been terminated."
+    },
+    "errors": {
+      "failedToLoad": "Failed to Load",
+      "retry": "Retry Connection",
+      "notFound": "Exam not found.",
+      "noQuestions": "No questions available for this exam."
+    },
+    "header": {
+      "saved": "Saved",
+      "saving": "Saving..."
+    },
+    "sidebar": {
+      "title": "Question Map",
+      "questionNum": "Question {{num}}",
+      "legend": {
+        "current": "Current",
+        "answered": "Answered",
+        "flagged": "Flagged",
+        "notAnswered": "Not Answered"
+      }
+    },
+    "footer": {
+      "previous": "Previous",
+      "overview": "Overview",
+      "marked": "Marked",
+      "mark": "Flag Question",
+      "finish": "Finish Exam",
+      "next": "Next"
+    },
+    "question": {
+      "marks": "Marks",
+      "true": "True",
+      "false": "False"
+    },
+    "summary": {
+      "title": "Exam Summary",
+      "answered": "Answered",
+      "flagged": "Flagged",
+      "left": "Left",
+      "unansweredList": "Unanswered Questions:",
+      "backButton": "Back to Exam",
+      "finishButton": "Finish Exam"
+    },
+    "confirm": {
+      "title": "Are you sure you want to finish?",
+      "warning": "You cannot return to the exam after submitting.",
+      "minutesRemaining": "You have {{min}} minutes remaining.",
+      "unanswered": "You have {{count}} unanswered questions.",
+      "cancel": "Cancel",
+      "submit": "Yes, Submit"
+    }
+  },
+  "examResult": {
+    "loading": "Generating report...",
+    "notFound": {
+      "title": "Result Not Found",
+      "message": "We couldn't find a submission for this exam. It seems you haven't taken it yet or the record is missing."
+    },
+    "backToLibrary": "Back to Exams Library",
+    "header": {
+      "passed": "PASSED",
+      "failed": "FAILED",
+      "excellentWork": "🎉 Exam Completed Successfully!",
+      "needsImprovement": "📘 Exam Not Passed — Keep Practising!",
+      "points": "Points"
+    },
+    "stats": {
+      "correct": "Correct",
+      "wrong": "Wrong",
+      "skipped": "Skipped",
+      "time": "Time",
+      "rank": "Rank"
+    },
+    "breakdown": {
+      "title": "Performance Breakdown",
+      "multipleChoice": "Multiple Choice",
+      "trueFalse": "True / False",
+      "essay": "Essay Questions",
+      "code": "Code Questions",
+      "pending": "Pending",
+      "questions": "questions",
+      "correct": "correct",
+      "pts": "pts"
+    },
+    "feedback": {
+      "title": "Tutor Feedback",
+      "strengths": "Strengths:",
+      "improve": "Areas for Improvement:",
+      "autoGrader": "System Auto-Grader",
+      "noPoints": "No points scored yet. Some questions may still be pending manual review.",
+      "autoGraded": "This result is based on auto-graded objective questions. Subjective questions are pending instructor review.",
+      "keepPracticing": "Keep practising — you'll get there!",
+      "noWeakAreas": "No significant weak areas detected.",
+      "correctFormat": "{{type}} ({{correct}}/{{total}} correct)",
+      "awaitingReviewFormat": "{{type}} — Awaiting Manual Review"
+    },
+    "perf": {
+      "excellent": "Excellent",
+      "veryGood": "Very Good",
+      "good": "Good",
+      "needsImprovement": "Needs Improvement",
+      "pendingReview": "Pending Review"
+    },
+    "types": {
+      "mcq": "MCQ",
+      "truefalse": "True/False",
+      "essay": "Essay",
+      "code": "Code"
+    },
+    "chart": {
+      "title": "Performance Comparison",
+      "you": "You",
+      "classAvg": "Class Average",
+      "percentileMsg1": "You scored higher than",
+      "percentileMsg2": "of students who took this exam."
+    }
+  },
+  "examReview": {
+    "loading": "Loading Review...",
+    "notFound": "Review data not found.",
+    "disabled": {
+      "title": "Review Not Available",
+      "message": "The teacher has disabled reviewing for this exam."
+    },
+    "backToResult": "Back to Result",
+    "title": "Review:",
+    "totalScore": "Total Score",
+    "filters": {
+      "all": "All Questions",
+      "correct": "Correct",
+      "wrong": "Incorrect"
+    },
+    "noQuestions": "No questions found for this filter.",
+    "card": {
+      "question": "Question",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "pending": "Pending Grading",
+      "yourAnswer": "Your Answer",
+      "correctAnswer": "Correct Answer",
+      "noAnswer": "No answer submitted.",
+      "noCode": "// No code submitted",
+      "yourCode": "Your Code:",
+      "explanation": "Explanation"
+    }
+  },
+  "studentResults": {
+    "pageTitle": "My Results",
+    "pageSubtitle": "Track your progress and analyze your performance.",
+    "filters": {
+      "searchPlaceholder": "Search exams...",
+      "allSubjects": "All Subjects",
+      "sort": {
+        "newest": "Sort: Newest First",
+        "oldest": "Sort: Oldest First",
+        "highest": "Sort: Highest Score",
+        "lowest": "Sort: Lowest Score"
+      },
+      "exportCsv": "Export CSV"
+    },
+    "stats": {
+      "header": "General Statistics",
+      "overallAverage": "Overall Average",
+      "totalExams": "Total Exams",
+      "highestScore": "Highest Score",
+      "lowestScore": "Lowest Score",
+      "topResult": "Top Result",
+      "bestPerformance": "Best performance yet",
+      "progress": "Progress",
+      "vsLastMonth": "vs last month",
+      "accuracy": "Accuracy",
+      "correctAnswers": "Correct answers",
+      "avgSpeed": "Avg Speed",
+      "perExam": "Per exam"
+    },
+    "chart": {
+      "title": "Performance Trend",
+      "score": "Score",
+      "baselineTitle": "Baseline Established",
+      "baselineText1": "You scored",
+      "baselineText2": "on your first exam. Take more exams to unlock live trend tracking!",
+      "emptyChart": "Insufficient data. Take your first exam to view statistics."
+    },
+    "list": {
+      "emptyTitle": "No Results Found",
+      "emptyText": "We couldn't find any exams matching your current search or filter criteria. Try adjusting your filters to see more results.",
+      "general": "General",
+      "viewDetails": "View Details",
+      "reviewAnswers": "Review Answers",
+      "passed": "Passed",
+      "failed": "Failed"
+    }
+  },
+  "studentSchedule": {
+    "pageTitle": "Exam Schedule",
+    "pageSubtitle": "Stay organized and never miss an upcoming exam.",
+    "views": {
+      "month": "Month",
+      "week": "Week",
+      "list": "List"
+    },
+    "nav": {
+      "weekOf": "Week of"
+    },
+    "legend": {
+      "upcoming": "Upcoming",
+      "today": "Today",
+      "completed": "Completed",
+      "missed": "Missed / Overdue"
+    },
+    "calendar": {
+      "sunday": "Sun",
+      "monday": "Mon",
+      "tuesday": "Tue",
+      "wednesday": "Wed",
+      "thursday": "Thu",
+      "friday": "Fri",
+      "saturday": "Sat"
+    },
+    "list": {
+      "empty": "No exams found for this month.",
+      "at": "at",
+      "countdownPrefix": "in ",
+      "days": " days"
+    },
+    "status": {
+      "UPCOMING": "UPCOMING",
+      "TODAY": "TODAY",
+      "COMPLETED": "COMPLETED",
+      "MISSED": "MISSED"
+    }
+  },
+  "studentCourses": {
+    "pageTitle": "My Courses",
+    "pageSubtitle": "Manage your enrolled courses and view details.",
+    "registerBtn": "Register New Course",
+    "searchPlaceholder": "Search for a course...",
+    "allSemesters": "All Semesters",
+    "allDepartments": "All Departments",
+    "tabs": {
+      "current": "Current",
+      "past": "Past",
+      "all": "All",
+      "courses": "Courses"
+    },
+    "card": {
+      "viewDetails": "View Details",
+      "courseInfo": "Course Info",
+      "credits": "Credits",
+      "semester": "Semester",
+      "department": "Department",
+      "courseProgress": "Course Progress",
+      "performance": "Performance",
+      "examsTaken": "Exams Taken",
+      "averageScore": "Average Score",
+      "upcoming": "Upcoming",
+      "noUpcoming": "No upcoming exams",
+      "actions": {
+        "exams": "Exams",
+        "grades": "Grades",
+        "materials": "Materials",
+        "report": "Report"
+      }
+    },
+    "sidebar": {
+      "generalStats": "General Stats",
+      "cumulativeGpa": "Cumulative GPA",
+      "creditsEarned": "Credits Earned",
+      "creditsRemaining": "Credits Remaining",
+      "degreeProgress": "Degree Progress"
+    },
+    "reportSuccess": "Report submitted successfully. Our team will review it."
+  },
+  "courseDetails": {
+    "loading": "Loading course…",
+    "notFound": "Course not found.",
+    "instructor": "Instructor",
+    "department": "Department",
+    "credits": "Credits",
+    "semester": "Semester",
+    "tabs": {
+      "overview": "Overview",
+      "exams": "Exams",
+      "grades": "Grades",
+      "materials": "Materials"
+    },
+    "overview": {
+      "aboutCourse": "About This Course",
+      "noDescription": "No description provided.",
+      "courseHealth": "Course Health",
+      "averageGrade": "Average Grade",
+      "attendance": "Attendance",
+      "participation": "Participation",
+      "recentResults": "Recent Results",
+      "viewAll": "View All",
+      "noResults": "No results yet.",
+      "courseMaterials": "Course Materials",
+      "noMaterials": "No materials yet."
+    },
+    "upcomingExams": "Upcoming Exams",
+    "noUpcomingExams": "No upcoming exams.",
+    "viewDetails": "View Details",
+    "exams": {
+      "noExams": "No exams for this course yet.",
+      "alwaysAvailable": "Always Available",
+      "questions": "Questions",
+      "min": "min",
+      "viewResult": "View Result",
+      "startNow": "Start Now",
+      "locked": "Locked",
+      "missed": "Missed"
+    },
+    "grades": {
+      "totalPoints": "Total Points Earned",
+      "noGrades": "No grades available yet.",
+      "grade": "Grade",
+      "submittedOn": "Submitted on"
+    },
+    "materials": {
+      "noMaterialsTitle": "No materials yet.",
+      "noMaterialsDesc": "Materials will appear here once uploaded by the instructor.",
+      "general": "General",
+      "week": "Week",
+      "viewed": "viewed",
+      "type": {
+        "pdf": "pdf",
+        "video": "video",
+        "slides": "slides",
+        "link": "link",
+        "code": "code"
+      },
+      "action": {
+        "download": "Download",
+        "watch": "Watch",
+        "open": "Open"
+      },
+      "markViewed": "Mark as viewed",
+      "markUnviewed": "Mark as unviewed"
+    },
+    "status": {
+      "upcoming": "Upcoming",
+      "active": "Active",
+      "submitted": "Submitted",
+      "completed": "Completed"
+    }
+  },
+  "studentProfile": {
+    "personalTab": {
+      "title": "Personal Information",
+      "subtitle": "Contact the admin to edit the data.",
+      "fullName": "Full Name",
+      "studentId": "Student ID",
+      "major": "Major",
+      "levelYear": "Level / Year",
+      "emailAddress": "Email Address",
+      "mobileNumber": "Mobile Number",
+      "dateOfBirth": "Date of Birth",
+      "level": "Level",
+      "na": "N/A"
+    },
+    "securityTab": {
+      "title": "Security & Login",
+      "subtitle": "Update your password. All other sessions will be invalidated.",
+      "secured": "Secured",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "updating": "Updating…",
+      "verificationRequired": "Additional Verification Required",
+      "verificationDesc": "Since you have Two-Factor Authentication enabled, please enter your 6-digit authenticator app code to confirm this password change.",
+      "enterCode": "Enter 6-digit Code",
+      "cancel": "Cancel",
+      "verifyContinue": "Verify & Continue",
+      "verifying": "Verifying…",
+      "twoFactorAuth": "Two-Factor Authentication (TOTP)",
+      "scanQr": "Scan QR Code",
+      "scanDesc": "Use Google Authenticator or similar TOTP app to scan.",
+      "manualKey": "If you cannot scan the QR code, manually enter this Secret Key into your app.",
+      "backupWarning": "Save this key! It is your only backup recovery method.",
+      "verify": "Verify",
+      "authApp": "Authenticator App",
+      "authAppDesc": "Add an extra layer of security via a TOTP app",
+      "active": "Active",
+      "disabled": "Disabled",
+      "enable2FA": "Enable 2FA",
+      "disable2FA": "Disable 2FA",
+      "passwordStrength": "Password Strength",
+      "weak": "Weak",
+      "fair": "Fair",
+      "good": "Good",
+      "strong": "Strong",
+      "veryStrong": "Very Strong",
+      "req8Chars": "8+ chars",
+      "reqUppercase": "Uppercase",
+      "reqNumber": "Number",
+      "reqSpecial": "Special char",
+      "enterCurrentPw": "Enter current password",
+      "createStrongPw": "Create a strong password",
+      "repeatNewPw": "Repeat new password"
+    },
+    "academicTab": {
+      "performance": "Academic Performance",
+      "performanceDesc": "Computed from all submitted exam results.",
+      "totalExams": "Total Exams Taken",
+      "avgScore": "Average Score",
+      "passRate": "Pass Rate",
+      "exams": "Exams",
+      "studyHours": "Study Hours",
+      "attendance": "Attendance",
+      "achievements": "Recent Achievements",
+      "highAchiever": "High Achiever",
+      "highAchieverDesc": "Average score above 80%",
+      "examVeteran": "Exam Veteran",
+      "examVeteranDesc": "Completed 5+ exams",
+      "noAchievements": "No achievements yet — complete your first exam to unlock badges!"
+    },
+    "preferencesTab": {
+      "title": "Global Preferences",
+      "subtitle": "Customize your viewing experience.",
+      "language": "Language",
+      "languageDesc": "Interface display language",
+      "appearance": "Appearance",
+      "appearanceDesc": "Theme preference",
+      "dark": "Dark",
+      "light": "Light",
+      "notifications": "Email Notifications",
+      "notifDesc": "Get notified when new exams are available",
+      "enabled": "Enabled",
+      "pushNotif": "Push Notifications",
+      "pushNotifDesc": "Browser desktop push alerts (coming soon)"
+    },
+    "header": {
+      "changePhoto": "Change",
+      "uploading": "Uploading…",
+      "removePhoto": "Remove Photo",
+      "student": "Student",
+      "joined": "Joined",
+      "online": "Online"
+    },
+    "tabs": {
+      "personal": "Personal",
+      "security": "Security",
+      "academic": "Academic",
+      "preferences": "Preferences"
+    }
+  },
+  "teacherDashboard": {
+    "welcomeBack": "Welcome back",
+    "hereIsYourUpdate": "Here is the latest update on your classes and students.",
+    "totalStudents": "Total Students",
+    "materials": "Materials",
+    "pendingSubmissions": "Pending Submissions",
+    "enrolledStudents": "Students enrolled across all your courses",
+    "indexedDocuments": "Indexed Documents",
+    "courseMaterials": "Course Materials",
+    "activeCourses": "Active Courses",
+    "publishedCourses": "Currently published courses",
+    "completedExams": "Completed Exams",
+    "past30Days": "in the past 30 days",
+    "completionRate": "Completion Rate",
+    "avgScore": "Average student score",
+    "quickActions": "Quick Actions",
+    "performance": "Performance Overview",
+    "recentActivity": "Recent Activity",
+    "noActivity": "No recent activity",
+    "noActivitySub": "Start by creating an exam or uploading materials",
+    "upcomingExams": "Upcoming Exams",
+    "noExams": "No upcoming exams",
+    "noExamsSub": "Create an exam to get started",
+    "statusLive": "Live Now",
+    "statusToday": "Today",
+    "statusTomorrow": "Tomorrow",
+    "statusUpcoming": "Upcoming",
+    "noDate": "No date set",
+    "aiGenerator": "AI Quiz Generator",
+    "aiGeneratorDesc": "Generate questions from documents",
+    "createExam": "Create Exam",
+    "createExamDesc": "Build a new exam manually",
+    "addMaterial": "Add Material",
+    "addMaterialDesc": "Upload course materials",
+    "questionBank": "Question Bank",
+    "questionBankDesc": "Manage saved questions",
+    "noData": "No exam data yet",
+    "noDataSub": "Create exams and receive submissions to see performance insights",
+    "emptyTitle": "Start Your Teaching Journey",
+    "emptyDesc": "Create your first exam, upload course materials, or let AI generate questions for you.",
+    "addCourse": "Add Course"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "refresh": "Refresh notifications",
+    "loading": "Loading...",
+    "empty": "No notifications yet",
+    "markAsRead": "Mark as read",
+    "markAllRead": "Mark all as read",
+    "from": "From:",
+    "justNow": "Just now",
+    "minsAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago",
+    "pageTitle": "Notifications",
+    "pageSubtitle": "Send alerts and announcements to students",
+    "composeTitle": "Compose Notification",
+    "targetAudience": "Target Audience",
+    "targetTypes": {
+      "global": "Global",
+      "globalLabel": "All Students",
+      "individual": "Individual",
+      "level": "Level",
+      "major": "Major"
+    },
+    "selectStudent": "Select Student",
+    "searchStudentPlaceholder": "Search by name or student ID...",
+    "selectLevel": "Select Level",
+    "chooseLevel": "Choose a level...",
+    "selectMajor": "Select Major/Specialization",
+    "chooseMajor": "Choose a major...",
+    "titleLabel": "Title",
+    "titlePlaceholder": "Notification title...",
+    "titleRequired": "Title is required",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "messageRequired": "Message is required",
+    "sending": "Sending...",
+    "sendBtn": "Send Notification",
+    "sentSuccess": "Notification sent successfully!",
+    "sendFailed": "Failed to send notification",
+    "sentHistory": "Sent History",
+    "noSentHistory": "No notifications sent yet",
+    "deleteConfirmTitle": "Delete Notification",
+    "deletedSuccess": "Notification deleted",
+    "deleteFailed": "Failed to delete notification",
+    "levelPrefix": "Level:",
+    "majorPrefix": "Major:",
+    "system": {
+      "courseApprovedTitle": "Course Approved: \"{{contentTitle}}\"",
+      "courseApprovedMsg": "Your course \"{{contentTitle}}\" has been approved and is now live.",
+      "courseRejectedTitle": "Course Rejected: \"{{contentTitle}}\"",
+      "courseRejectedMsg": "Your course \"{{contentTitle}}\" was rejected by the admin.\n\nRejection reason: {{notes}}",
+      "examApprovedTitle": "Exam Approved: \"{{contentTitle}}\"",
+      "examApprovedMsg": "Your exam \"{{contentTitle}}\" has been approved and is now live.",
+      "examRejectedTitle": "Exam Rejected: \"{{contentTitle}}\"",
+      "examRejectedMsg": "Your exam \"{{contentTitle}}\" was rejected by the admin.\n\nRejection reason: {{notes}}",
+      "materialApprovedTitle": "Material Approved: \"{{contentTitle}}\"",
+      "materialApprovedMsg": "Your material \"{{contentTitle}}\" has been approved and is now live.",
+      "materialRejectedTitle": "Material Rejected: \"{{contentTitle}}\"",
+      "materialRejectedMsg": "Your material \"{{contentTitle}}\" was rejected by the admin.\n\nRejection reason: {{notes}}"
+    }
+  },
+  "teacherCourses": {
+    "title": "Course Management",
+    "subtitle": "Create and manage your educational courses",
+    "createCourse": "Create New Course",
+    "searchPlaceholder": "Search courses by title or code...",
+    "noCoursesYet": "No courses yet",
+    "noCoursesDesc": "You haven't created any courses. Get started by adding your first one.",
+    "addFirstCourse": "Add your first course",
+    "status": {
+      "active": "Active",
+      "disabled": "Disabled",
+      "hidden": "Hidden",
+      "pendingReview": "Pending Review",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "hideCourse": "Hide course",
+    "showCourse": "Show course",
+    "awaitingReviewDesc": "Awaiting admin review before this course can go live.",
+    "rejectedDesc": "Course rejected — contact admin",
+    "rejectionReason": "Rejection reason:",
+    "noDescription": "No description provided.",
+    "students": "Students",
+    "materials": "Materials",
+    "statsTooltip": "Course Statistics",
+    "contentTooltip": "Course Content (Materials & Exams)",
+    "studentsTooltip": "Manage Students",
+    "editTooltip": "Edit course settings",
+    "deleteTooltip": "Delete course",
+    "modals": {
+      "deleteConfirm": {
+        "title": "Delete Course",
+        "areYouSure": "Are you sure you want to delete",
+        "warning": "This action cannot be undone and all associated data will be permanently removed.",
+        "cancel": "Cancel",
+        "deleteForever": "Delete Forever",
+        "deleting": "Deleting..."
+      },
+      "form": {
+        "editCourse": "Edit Course",
+        "createNewCourse": "Create New Course",
+        "editDesc": "Update course details and settings",
+        "createDesc": "Fill in the details for your new course",
+        "title": "Course Title",
+        "code": "Course Code",
+        "instructor": "Instructor Name",
+        "department": "Department",
+        "semester": "Semester",
+        "credits": "Credits",
+        "description": "Description",
+        "visibility": "Visibility Status",
+        "visHidden": "Hidden (Draft/Preparation)",
+        "visActive": "Active (Visible to Students)",
+        "visDisabled": "Disabled (Archived)",
+        "cancel": "Cancel",
+        "save": "Save Course",
+        "saving": "Saving...",
+        "titlePlaceholder": "e.g. Advanced Calculus",
+        "codePlaceholder": "e.g. MATH101",
+        "instructorPlaceholder": "e.g. Dr. Ahmed",
+        "departmentPlaceholder": "e.g. Computer Science",
+        "semesterPlaceholder": "e.g. Fall 2026",
+        "descPlaceholder": "Briefly describe the course objectives..."
+      },
+      "content": {
+        "title": "Course Content",
+        "materialsTab": "Materials & Resources",
+        "examsTab": "Linked Exams",
+        "addNewMaterial": "Add New Material",
+        "publishedMaterials": "Published Materials",
+        "courseExams": "Course Exams"
+      },
+      "stats": {
+        "title": "Course Statistics",
+        "students": "Students",
+        "materials": "Materials",
+        "exams": "Exams",
+        "avgScore": "Avg. Score",
+        "latestResults": "Latest Exam Results",
+        "noSubmissions": "No exam submissions found for this course.",
+        "student": "Student",
+        "exam": "Exam",
+        "score": "Score",
+        "performance": "Performance",
+        "submitted": "Submitted",
+        "perfAverage": "Average",
+        "perfHigh": "High",
+        "perfLow": "Low"
+      },
+      "enrollment": {
+        "title": "Manage Students",
+        "addStudents": "Add Students",
+        "individual": "Individual",
+        "bulkGroup": "Bulk Group",
+        "enrolledStudents": "Enrolled Students"
+      },
+      "search": {
+        "searchLabel": "Search by name or student ID",
+        "searchPlaceholder": "Search students...",
+        "unnamedStudent": "Unnamed Student",
+        "noStudentsFound": "No students found matching"
+      },
+      "group": {
+        "levelLabel": "Academic Level",
+        "allLevels": "All Levels",
+        "level": "Level",
+        "majorLabel": "Major / Specialty",
+        "allMajors": "All Majors",
+        "enrollGroup": "Enroll Group",
+        "enrolling": "Enrolling...",
+        "successEnrolled": "students enrolled successfully",
+        "noNewStudents": "No new students found matching those filters"
+      },
+      "enrolled": {
+        "noStudents": "No students enrolled",
+        "noStudentsDesc": "Search for students above or enroll a group to get started.",
+        "removeStudent": "Remove student",
+        "groupBadge": "Group",
+        "unknownStudent": "Unknown Student"
+      },
+      "uploader": {
+        "fileUpload": "File Upload",
+        "externalLink": "External Link",
+        "title": "Material Title",
+        "titlePlaceholder": "e.g. Chapter 1 Lecture, Syllabus...",
+        "url": "URL",
+        "attachFile": "Attach File (PDF, Video)",
+        "uploadInst": "Click to upload or drag and drop",
+        "uploadLimit": "PDF or Video up to 50MB",
+        "uploadBtn": "Upload Material",
+        "addLinkBtn": "Add Link",
+        "uploading": "Uploading..."
+      },
+      "materials": {
+        "noMaterials": "No materials yet",
+        "noMaterialsDesc": "Upload a PDF, Video, or add a Link to get started.",
+        "pendingReview": "Pending Review",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "deleteConfirm": "Are you sure you want to delete this material?"
+      },
+      "examsList": {
+        "noExams": "No exams created yet",
+        "noExamsDesc": "Navigate to the Exams module to create a new exam for this course.",
+        "upcoming": "Upcoming",
+        "live": "Live",
+        "finished": "Finished",
+        "draft": "Draft"
+      }
+    }
+  }
+}

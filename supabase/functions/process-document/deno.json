@@ -1,0 +1,14 @@
+{
+  "name": "process-document",
+  "version": "1.0.0",
+  "description": "RAG Document Processing with Local Embeddings via Transformers.js",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false
+  },
+  "imports": {
+    "@supabase/functions-js": "https://esm.sh/@supabase/functions-js@2.4.4",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2",
+    "@xenova/transformers": "https://esm.sh/@xenova/transformers@2"
+  }
+}
