@@ -69,12 +69,12 @@ export default function StudentProfile() {
         if (!file || !user) return;
 
         // Validations
-        if (!file.type.match(/image\/(jpeg|png|webp)/)) {
-            toast.error('Only JPEG, PNG, or WEBP images are allowed.');
+        if (!file.type.match(/image\/(jpeg|png|webp|gif)/)) {
+            toast.error('Only JPEG, PNG, WEBP, or GIF images are allowed.');
             return;
         }
-        if (file.size > 2 * 1024 * 1024) {
-            toast.error('Image must be less than 2MB.');
+        if (file.size > 5 * 1024 * 1024) {
+            toast.error('Image must be less than 5 MB.');
             return;
         }
 
@@ -111,8 +111,7 @@ export default function StudentProfile() {
             updateLocalUser({ avatar_url: publicUrl });
             toast.success('Avatar updated ✓');
         } catch {
-            // Bucket may not exist — keep local preview, silently skip storage error
-            toast.success('Avatar preview updated (storage not configured)');
+            toast.error('Failed to upload avatar');
         } finally {
             setAvatarUploading(false);
             URL.revokeObjectURL(localUrl);

@@ -42,11 +42,11 @@ export const adminProfileApi = {
   },
 
   async uploadAvatar(userId: string, file: File): Promise<string> {
-    if (!file.type.match(/image\/(jpeg|png|webp)/)) {
-      throw new Error('Only JPEG, PNG, or WEBP images are allowed.');
+    if (!file.type.match(/image\/(jpeg|png|webp|gif)/)) {
+      throw new Error('Only JPEG, PNG, WEBP, or GIF images are allowed.');
     }
-    if (file.size > 2 * 1024 * 1024) {
-      throw new Error('Image must be less than 2 MB.');
+    if (file.size > 5 * 1024 * 1024) {
+      throw new Error('Image must be less than 5 MB.');
     }
 
     // Resize to 256×256 webp via canvas

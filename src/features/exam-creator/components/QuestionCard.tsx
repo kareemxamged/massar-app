@@ -3,6 +3,7 @@ import { useFormContext } from 'react-hook-form';
 import { Trash2, Image as ImageIcon, Plus, X, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../../../services/supabase';
+import { toast } from 'react-hot-toast';
 import { ExamFormData } from '../types';
 import styles from '../ExamCreator.module.css';
 
@@ -72,6 +73,15 @@ export function QuestionCard({ index, remove }: QuestionCardProps) {
         const file = e.target.files?.[0];
         if (!file) return;
 
+        if (!file.type.match(/image\/(jpeg|png|gif|webp|svg\+xml)/)) {
+            toast.error(isRtl ? 'نوع الملف غير مسموح به.' : 'File type not allowed. Use JPEG, PNG, GIF, WEBP, or SVG.');
+            return;
+        }
+        if (file.size > 10 * 1024 * 1024) {
+            toast.error(isRtl ? 'حجم الصورة يجب أن يكون أقل من 10 ميغابايت.' : 'Image must be less than 10 MB.');
+            return;
+        }
+
         setIsUploading(true);
         try {
             const ext = file.name.split('.').pop();
@@ -86,6 +96,7 @@ export function QuestionCard({ index, remove }: QuestionCardProps) {
             setValue(`questions.${index}.image_url`, data.publicUrl, { shouldValidate: true });
         } catch (error) {
             console.error('Image upload failed', error);
+            toast.error(isRtl ? 'فشل رفع الصورة.' : 'Failed to upload image.');
         } finally {
             setIsUploading(false);
         }

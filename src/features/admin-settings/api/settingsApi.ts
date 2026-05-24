@@ -26,6 +26,13 @@ export const settingsApi = {
   },
 
   async uploadLogo(file: File): Promise<string> {
+    if (!file.type.match(/image\/(png|jpeg|svg\+xml)/)) {
+      throw new Error('Only PNG, JPEG, or SVG images are allowed for the logo.');
+    }
+    if (file.size > 2 * 1024 * 1024) {
+      throw new Error('Logo must be less than 2 MB.');
+    }
+
     const ext  = file.name.split('.').pop() ?? 'png';
     const path = `logos/site-logo.${ext}`;
     const { error } = await svc.storage

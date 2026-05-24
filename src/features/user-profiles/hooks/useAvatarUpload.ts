@@ -9,12 +9,12 @@ export function useAvatarUpload(onSuccess?: (url: string) => void) {
 
   const upload = async (file: File): Promise<string | null> => {
     if (!user) return null;
-    if (!file.type.match(/image\/(jpeg|png|webp)/)) {
-      toast.error('Only JPEG, PNG, or WEBP images are allowed.');
+    if (!file.type.match(/image\/(jpeg|png|webp|gif)/)) {
+      toast.error('Only JPEG, PNG, WEBP, or GIF images are allowed.');
       return null;
     }
-    if (file.size > 2 * 1024 * 1024) {
-      toast.error('Image must be less than 2 MB.');
+    if (file.size > 5 * 1024 * 1024) {
+      toast.error('Image must be less than 5 MB.');
       return null;
     }
 

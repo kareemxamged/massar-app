@@ -29,10 +29,10 @@ export default function TeacherProfile() {
         professional: 'المهنية',
         security: 'الأمان',
         preferences: 'التفضيلات',
-        onlyImg: 'يُسمح فقط بصور JPEG أو PNG أو WEBP.',
-        imgSize: 'يجب أن يكون حجم الصورة أقل من 2 ميغابايت.',
+        onlyImg: 'يُسمح فقط بصور JPEG أو PNG أو WEBP أو GIF.',
+        imgSize: 'يجب أن يكون حجم الصورة أقل من 5 ميغابايت.',
         avatarSuccess: 'تم تحديث الصورة الشخصية ✓',
-        avatarPreview: 'تم تحديث معاينة الصورة (لم يتم إعداد التخزين)',
+        avatarFail2: 'فشل رفع الصورة الشخصية',
         avatarRemoved: 'تمت إزالة الصورة بنجاح',
         avatarFail: 'فشلت إزالة الصورة',
         uploading: 'جاري الرفع...',
@@ -49,10 +49,10 @@ export default function TeacherProfile() {
         professional: 'Professional',
         security: 'Security',
         preferences: 'Preferences',
-        onlyImg: 'Only JPEG, PNG, or WEBP images are allowed.',
-        imgSize: 'Image must be less than 2MB.',
+        onlyImg: 'Only JPEG, PNG, WEBP, or GIF images are allowed.',
+        imgSize: 'Image must be less than 5 MB.',
         avatarSuccess: 'Avatar updated ✓',
-        avatarPreview: 'Avatar preview updated (storage not configured)',
+        avatarFail2: 'Failed to upload avatar',
         avatarRemoved: 'Avatar removed successfully',
         avatarFail: 'Failed to remove avatar',
         uploading: 'Uploading…',
@@ -121,11 +121,11 @@ export default function TeacherProfile() {
         const file = e.target.files?.[0];
         if (!file || !user) return;
 
-        if (!file.type.match(/image\/(jpeg|png|webp)/)) {
+        if (!file.type.match(/image\/(jpeg|png|webp|gif)/)) {
             toast.error(txt.onlyImg);
             return;
         }
-        if (file.size > 2 * 1024 * 1024) {
+        if (file.size > 5 * 1024 * 1024) {
             toast.error(txt.imgSize);
             return;
         }
@@ -159,7 +159,7 @@ export default function TeacherProfile() {
             updateLocalUser({ avatar_url: publicUrl });
             toast.success(txt.avatarSuccess);
         } catch {
-            toast.success(txt.avatarPreview);
+            toast.error(txt.avatarFail2);
         } finally {
             setAvatarUploading(false);
             URL.revokeObjectURL(localUrl);

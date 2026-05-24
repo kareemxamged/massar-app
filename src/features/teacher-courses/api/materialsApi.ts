@@ -26,6 +26,12 @@ export interface CourseExam {
     start_time: string | null;
 }
 
+const ALLOWED_MATERIAL_TYPES: Record<'pdf' | 'video', RegExp> = {
+    pdf: /^application\/pdf$/,
+    video: /^video\//,
+};
+const MATERIAL_MAX_BYTES = 50 * 1024 * 1024;
+
 export const materialsApi = {
     /**
      * Fetch all materials (files & links) for a specific course
@@ -50,6 +56,13 @@ export const materialsApi = {
         type: 'pdf' | 'video',
         title: string
     ): Promise<CourseMaterial> {
+        if (!ALLOWED_MATERIAL_TYPES[type].test(file.type)) {
+            throw new Error(type === 'pdf' ? 'Only PDF files are allowed.' : 'Only video files are allowed.');
+        }
+        if (file.size > MATERIAL_MAX_BYTES) {
+            throw new Error('File must be less than 50 MB.');
+        }
+
         // 1. Upload to Storage
         const fileExt = file.name.split('.').pop();
         const fileName = `${courseId}/${Date.now()}-${Math.random().toString(36).substring(7)}.${fileExt}`;
@@ -109,17 +122,15 @@ export const materialsApi = {
         // 1. If it's a file, extract path and remove from storage
         if (type === 'pdf' || type === 'video') {
             try {
-                // Extract 'materials/...' from the public URL
-                const urlParts = url.split('/course-assets/');
-                if (urlParts.length === 2) {
-                    const filePath = urlParts[1].split('?')[0]; // Remove query params if any
-                    if (filePath) {
-                        await supabase.storage.from('course-assets').remove([filePath]);
-                    }
+                const u = new URL(url);
+                const marker = '/object/public/course-assets/';
+                const idx = u.pathname.indexOf(marker);
+                if (idx !== -1) {
+                    const filePath = decodeURIComponent(u.pathname.slice(idx + marker.length));
+                    if (filePath) await supabase.storage.from('course-assets').remove([filePath]);
                 }
             } catch (err) {
                 console.error('Failed to remove file from storage:', err);
-                // Continue to delete the DB record even if storage deletion fails
             }
         }
 
