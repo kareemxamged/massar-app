@@ -7,9 +7,9 @@ module.exports = {
     // ─────────────────────────────────────────────
     {
       name: 'massar-app',
-      script: 'serve',
-      interpreter: 'none',
-      args: '-s dist --listen 3000',
+      script: '/usr/bin/serve',
+      interpreter: 'node',
+      args: '-s dist -l 3000',
       cwd: APP_ROOT,
 
       instances: 1,
